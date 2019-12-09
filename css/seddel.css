@@ -4,10 +4,7 @@
   background-color: #f3f3f3;
   height: 100vh;
   width: 100vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 0.25fr 1fr 0.25fr;
-      grid-template-columns: 0.25fr 1fr 0.25fr;
+  margin: 0;
 }
 
 .frank h2 {
@@ -15,8 +12,9 @@
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   font-size: 2em;
-  padding: 0;
+  padding-top: 20px;
   margin: 0;
+  text-align: center;
 }
 
 .frank .john {
@@ -30,14 +28,29 @@
   font-size: 1.6em;
 }
 
-.frank hr {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
+.frank .frank__hr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
 }
 
-.frank .ashlog {
+.frank .frank__hr img {
+  width: 70%;
+}
+
+.frank .frank__hr hr {
+  border: none;
+  background-color: black;
+  height: 0.5px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ashlog {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -49,7 +62,7 @@
   width: 100%;
 }
 
-.frank .ashlog section {
+.ashlog section {
   border-radius: 50%;
   background-color: black;
   border: black solid 1px;
