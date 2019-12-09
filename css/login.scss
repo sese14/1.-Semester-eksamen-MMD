@@ -1,0 +1,39 @@
+$colors: (
+    primary: #F42929,
+    secondary: #3C4BFF,
+    neutral: #f3f3f3,
+    tezt:rgb(255, 255, 255),
+)
+;
+
+*{
+    justify-self: center;
+}
+.uffa{
+background-color: map-get($colors, neutral);
+display: grid;
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+.logo{
+    height: 30vh;
+}
+.the-one{
+    width: 225px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+img{
+    height: 100px;
+}}
+hr{
+    width: 100%;
+}
+p{
+    font-size: 2em;
+}
+}
+
+
+

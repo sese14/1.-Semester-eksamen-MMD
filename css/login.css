@@ -1,0 +1,41 @@
+* {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.uffa {
+  background-color: #f3f3f3;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.uffa .logo {
+  height: 30vh;
+}
+
+.uffa .the-one {
+  width: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.uffa .the-one img {
+  height: 100px;
+}
+
+.uffa hr {
+  width: 100%;
+}
+
+.uffa p {
+  font-size: 2em;
+}
+/*# sourceMappingURL=login.css.map */

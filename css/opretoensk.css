@@ -1,0 +1,59 @@
+.give-me-my-fucking-money-Susan {
+  background-color: #f3f3f3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% 40% 40%;
+      grid-template-rows: 20% 40% 40%;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.give-me-my-fucking-money-Susan h2 {
+  padding-top: 7vh;
+  margin: 0;
+}
+
+.give-me-my-fucking-money-Susan section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.give-me-my-fucking-money-Susan section input {
+  width: 80%;
+  height: 60px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-left: 10px;
+  font-size: 1em;
+}
+
+.give-me-my-fucking-money-Susan button {
+  height: 70px;
+  width: 80%;
+  background-color: #F42929;
+  color: white;
+  font-size: 1.6em;
+  border-radius: 10px;
+}
+
+.give-me-my-fucking-money-Susan img {
+  position: absolute;
+  bottom: -3%;
+  width: 100%;
+}
+/*# sourceMappingURL=opretoensk.css.map */

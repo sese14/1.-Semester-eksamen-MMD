@@ -1,0 +1,51 @@
+$colors: (
+    primary: #F42929,
+    secondary: #3C4BFF,
+    neutral: #f3f3f3,
+    tezt:rgb(255, 255, 255),
+);
+
+
+.give-me-my-fucking-money-Susan{
+    background-color: map-get($map: $colors, $key: neutral);
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    h2{
+        padding-top: 7vh;
+        margin: 0;
+    }
+        section{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            justify-content: space-evenly;
+            input{
+                width: 80%;
+                height: 60px;
+                align-self: center;
+                border-radius: 10px;
+                border: 1px solid black;
+                padding-left: 10px;
+                font-size: 1em;
+            }
+        }
+        button{
+            height: 70px;
+            width: 80%;
+            background-color: map-get($map: $colors, $key: primary);
+            color: map-get($map: $colors, $key:tezt);
+            font-size: 1.6em;
+            border-radius:10px ;}
+
+    img{
+        position: absolute;
+        bottom: -3%;
+        width: 100%;
+
+    }
+}
