@@ -34,7 +34,17 @@
   right: 0;
 }
 
-.redhotchilipeppers button {
+.redhotchilipeppers .redhotchili__a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 100px;
   left: 20px;

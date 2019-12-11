@@ -1,9 +1,5 @@
-* {
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
 .uffa {
+  justify-items: center;
   background-color: #f3f3f3;
   display: -ms-grid;
   display: grid;

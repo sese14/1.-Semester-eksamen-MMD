@@ -30,7 +30,11 @@ $colors: (
         bottom: 0;
         right: 0;
   }
-  button{
+  .redhotchili__a{
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       bottom: 100px;
       left: 20px;

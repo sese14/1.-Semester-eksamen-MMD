@@ -14,6 +14,7 @@ $colors: (
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    justify-items: center;
     h2{
         padding-top: 7vh;
         margin: 0;
@@ -34,7 +35,11 @@ $colors: (
                 font-size: 1em;
             }
         }
-        button{
+        a{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 70px;
             width: 80%;
             background-color: map-get($map: $colors, $key: primary);
@@ -43,6 +48,7 @@ $colors: (
             border-radius:10px ;}
 
     img{
+        z-index: -2;
         position: absolute;
         bottom: -3%;
         width: 100%;

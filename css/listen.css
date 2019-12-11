@@ -45,9 +45,9 @@
 }
 
 .pineapple a {
+  left: 1vw;
   position: absolute;
-  bottom: 0;
-  left: 5%;
+  top: 2vh;
 }
 
 .pineapple button {
