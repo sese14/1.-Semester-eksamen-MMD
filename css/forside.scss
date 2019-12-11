@@ -16,6 +16,23 @@ grid-template-columns: 1fr;
 overflow: hidden;
 position: fixed;
 margin: 0;
+nav{
+    border: solid 1px;
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: space-around;
+  
+    box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
+    a{
+        color: map-get($map: $colors, $key: neutral);
+    }
+
+}
 .logud{
     position: absolute;
 }

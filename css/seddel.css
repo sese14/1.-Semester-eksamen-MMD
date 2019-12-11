@@ -7,9 +7,31 @@
   margin: 0;
 }
 
+.frank nav {
+  border: solid 1px;
+  position: fixed;
+  bottom: 0;
+  height: 7vh;
+  width: 100%;
+  font-size: 3em;
+  background: rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
+          box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
+}
+
+.frank nav a {
+  color: #f3f3f3;
+}
+
 .frank h2 {
   font-size: 2em;
   padding-top: 20px;
+  padding-bottom: 20px;
   margin: 0;
   text-align: center;
 }
@@ -19,13 +41,15 @@
   display: grid;
   -ms-grid-columns: 4fr 1fr;
       grid-template-columns: 4fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   -ms-grid-column-align: start;
       justify-self: start;
   text-align: start;
   padding-left: 10vw;
   font-size: 1.6em;
+}
+
+.frank .john p {
+  margin: 0;
 }
 
 .frank .john a {
@@ -86,6 +110,7 @@
   -ms-grid-columns: 25% 75%;
       grid-template-columns: 25% 75%;
   width: 100%;
+  margin-bottom: 7vh;
 }
 
 .frank .ashlog section {
