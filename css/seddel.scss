@@ -28,14 +28,20 @@ h2{
         padding-left: 10vw;
         font-size: 1.6em;
 
-        p {
+        a {
             grid-column: 1;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
         }
 
         #john__open {
+            grid-column: 2;
             align-self: center;
             font-size: 50px;
             color: map-get($colors, primary);
+            cursor: pointer;
         }
     }
     .frank__hr {
@@ -45,19 +51,20 @@ h2{
 
     img {
         width: 70%;
+        justify-self: center;
         
     }
 
     hr{
             border: none;
             background-color: black;
-            height: 0.5px;
+            height: 1px;
             width: 100%;
             align-self: center;
         }
         }
         
-    }
+    
     .ashlog{
         grid-column: 1/4; 
         font-size: 1.6em;
@@ -103,18 +110,9 @@ h2{
 
     .modal__content__img {
         display: grid;
-
-        .img__facebook {
-            padding-bottom: 5%;
-        }
-
-        .img__mail{
-            padding-bottom: 5%;
-        }
-
-        .img__sms{
-            padding-bottom: 10%;
-        }
+        justify-content: center;
+        justify-items: center;
+        grid-gap: 3vh;
     }
 
     button {
@@ -136,5 +134,6 @@ h2{
     transform: rotate(45deg);
 }
 
+}
 
 

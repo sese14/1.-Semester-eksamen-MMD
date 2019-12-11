@@ -10,6 +10,7 @@
       grid-template-columns: 1fr;
   overflow: hidden;
   position: fixed;
+  margin: 0;
 }
 
 .radish .logud {
