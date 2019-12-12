@@ -116,7 +116,20 @@
 
 .frank .ashlog section {
   border-radius: 50%;
-  background-color: white;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+
   border: black solid 1px;
   height: 10vw;
   width: 10vw;

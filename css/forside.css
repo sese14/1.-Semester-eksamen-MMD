@@ -71,7 +71,8 @@
   font-size: 1.6em;
   text-align: center;
   padding-top: 3vh;
-  border: solid .5px black;
+  border: solid 0px black;
+  border-radius: 10px;
   text-decoration: none;
   color: white;
 }

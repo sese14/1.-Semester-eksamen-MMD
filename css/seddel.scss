@@ -22,7 +22,8 @@ nav{
     display: flex;
     justify-content: space-around;
 
-    box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
+    // box-shadow info --->  https://generatepress.com/forums/topic/shadow-under-nav-bar/
+ box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
     a{
         color: map-get($map: $colors, $key: neutral);
     }
@@ -93,7 +94,12 @@ p{
    
         section{
             border-radius: 50%;
-            background-color: black;
+            background-color: map-get($map: $colors, $key: neutral );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            align-self: center;
             border: black solid 1px;
             height: 10vw;
             width: 10vw;
