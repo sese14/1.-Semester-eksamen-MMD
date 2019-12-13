@@ -196,12 +196,19 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
 /*# sourceMappingURL=seddel.css.map */
+
 
 @media (min-width: 600px) {
   .frank nav a {
     padding-top: 1.5%;
   }
+
+  .frank h2 {
+    font-size: 2.5em;
+  }
+
   
   .frank h2 {
     font-size: 2.5em;
@@ -213,11 +220,16 @@
     grid-gap: 4vh;
     font-size: 2.2em;
   }
+  .frank .john #john__open {
+    font-size: 75px;
+  }
+
   
   .frank .john #john__open {
     font-size: 75px;
   }
   
+
   .frank .ashlog {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -226,11 +238,18 @@
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 25% 75%;
-        grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
+
     width: 100%;
     margin-bottom: 7vh;
     margin-left: 7vh;
   }
+
+  .frank #modal {
+    width: 110%;
+  }
+
   
   .frank #modal {
     width: 110%;
@@ -244,12 +263,31 @@
     text-align: center;
     position: relative;
   }
-  
+
   .frank .modal__content h3 {
     padding-bottom: 5%;
     padding-top: 10%;
     font-size: 2.5em;
   }
+
+  .img__facebook {
+    width: 140%;
+  }
+  .img__mail {
+    width: 110%;
+  }
+  .img__sms {
+    width: 140%;
+  }
+  .frank .modal__content button {
+    font-size: 2em;
+  }
+  .frank #modal__content__close {
+    font-size: 75px;
+  }
+}
+/*# sourceMappingURL=seddel.css.map */
+
   
   .img__facebook {
     width: 140%;

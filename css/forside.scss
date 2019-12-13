@@ -3,8 +3,7 @@ $colors: (
     secondary: #3C4BFF,
     neutral: #f3f3f3,
     tezt:rgb(255, 255, 255),
-)
-;
+);
 
 .radish{
 background-color: map-get($colors, neutral);
@@ -16,6 +15,7 @@ grid-template-columns: 1fr;
 overflow: hidden;
 position: fixed;
 margin: 0;
+
 nav{
     border: solid 1px;
     position: fixed;
@@ -76,5 +76,44 @@ img{
 }}
 
 
+
+@media (min-width: 600px){ 
+    .radish {
+      display: grid;
+    }
+    .radish .logud {
+      position: absolute;
+      font-size: 2em;
+      margin: 3%;
+    }
+  
+    .radish__logo {
+      visibility: unset;
+      width: 40%;
+      justify-self: center;
+      margin-top: 15%;
+  
+    }
+    
+    .tree {
+      display: none;
+    }
+    
+    .radish .groupster {
+      padding: 10% 0%;
+    }
+    
+    .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+      font-size: 2.5em;
+    }
+    
+    .gifts {
+        visibility: unset;
+        z-index: -2;
+        position: absolute;
+        bottom: -3%;
+        width: 70%;
+    }
+  }
 
 
