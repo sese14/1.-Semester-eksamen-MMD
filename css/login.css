@@ -58,4 +58,29 @@
   -ms-grid-column: 1;
   grid-column: 1fr;
 }
+
+/* Ipad version */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  .uffa {
+    overflow: auto;
+  }
+  .uffa .logo {
+    height: 40vh;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .uffa .the-one {
+    width: 65%;
+  }
+  .uffa .uffa__hr hr {
+    height: 1px;
+  }
+  .uffa p {
+    font-size: 35px;
+  }
+}
 /*# sourceMappingURL=login.css.map */

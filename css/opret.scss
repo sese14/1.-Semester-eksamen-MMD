@@ -60,3 +60,26 @@ $colors: (
         width: 100%;
     }
 }
+
+@media (min-width: 600px){  
+    .frid p {
+      font-size: 1em;
+      padding-top: 2%;
+    }
+  
+    ::placeholder {
+      font-size: 2em;
+    }
+    
+    .frid a {
+      font-size: 2em;
+    }
+    
+    .frid img {
+      z-index: -2;
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+    }
+  }
+  
