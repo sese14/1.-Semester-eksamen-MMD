@@ -29,7 +29,7 @@ $colors: (
     img{
        width: 100%;
        grid-column: 1;
-       margin-left: 2vw;;
+       margin: 2vw;;
     }
    
       h2{
@@ -41,13 +41,26 @@ $colors: (
     }
     p{
         grid-column: 2;
+        padding-left: 20vw;
     }
 
+nav{
+    border: solid 1px;
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: space-around;
 
-a{
-    left: 1vw;
-    position: absolute;
-    top: 2vh;
+    // box-shadow info --->  https://generatepress.com/forums/topic/shadow-under-nav-bar/
+ box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
+    a{
+        color: map-get($map: $colors, $key: neutral);
+    }
+
 }
 button{
     height: 70px;
@@ -65,10 +78,13 @@ button{
         width: 100%;
         hr{
             border: none;
-            background-color: black;
             width: 100%;
             align-self: center;
-            height:2px;
+
+            // hr styling ---->  https://css-tricks.com/examples/hrs/
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
         }
     }
     }

@@ -16,6 +16,24 @@ overflow: hidden;
 position: fixed;
 margin: 0;
 
+nav{
+    border: solid 1px;
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: space-around;
+ 
+    // box-shadow info --->  https://generatepress.com/forums/topic/shadow-under-nav-bar/
+    box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
+    a{
+        color: map-get($map: $colors, $key: neutral);
+    }
+
+}
 .logud{
     position: absolute;
 }
@@ -34,7 +52,7 @@ img{
     width: 100%;
     align-items: center;
     color: map-get($map:$colors, $key: tezt);
-
+    
 
 .make, .se, .sell{
     width: 80%;
@@ -42,7 +60,8 @@ img{
     font-size: 1.6em;
     text-align: center;
     padding-top: 3vh;
-    border: solid .5px black;
+    border: solid 0px black;
+    border-radius: 10px;
     text-decoration: none;
     color: map-get($map: $colors, $key: tezt );
 }

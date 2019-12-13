@@ -24,15 +24,23 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/cssbase.css">
+    <script src="https://kit.fontawesome.com/0eb1370423.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="frank">
+
+    <nav>
+        <a href="login.html"><i class="fas fa-door-open"></i></a>
+        <a href="forside.html"><i class="fas fa-home"></i></a>
+        <a href="javascript:history.back()"><i class="fas fa-long-arrow-alt-left"></i></a>
+    </nav>
+    
     <h2>Mine ønskesedler:</h2>
 
-<section class="john">
-    <a href="listen.html"><p>Peters juleønsker</p></a> <p id="john__open">+</p>
-    <a href="listen.html"><p>Peters fødselsdagsønsker</p></a> <p id="john__open">+</p>
-</section>
+    <section class="john">
+        <a href="listen.html"><p>Peters juleønsker</p></a> <p id="john__open">+</p>
+        <a href="listen.html"><p>Peters fødselsdagsønsker</p></a> <p id="john__open">+</p>
+    </section>
 
     <section class="frank__hr">
         <hr> <img src="css/billeder/br.png" alt="br logo">
@@ -44,38 +52,36 @@
 
     <h2>Delt med mig:</h2>
     <section class="ashlog">
-        <section></section>
+        <section>JK</section>
         <p>Julianes juleønsker</p>
-        <section></section>
+        <section>AS</section>
         <p>Astrids juleønsker 2019</p>
-        <section></section>
+        <section>BF</section>
         <p>Bertrams juleønsker</p>
-        <section></section>
+        <section>ST</section>
         <p>Jul 2019 - Sofie T</p>
     </section>
 
 
    
 
-<!--Modal section-->
-<section id="modal">
-    <section class="modal__content">
-        <section id="modal__content__close">+</section>
-        <h3>Del din ønskeseddel med:</h3>
-        <section class="modal__content__img">
-            <img src="css/billeder/1200px-Facebook_New_Logo_(2015).svg.png" class="img__facebook" alt="Facebook logo">
-            <img src="css/billeder/Gmail-Logo.png" class="img__mail" alt="G-mail logo">
-            <img src="css/billeder/sms-logo.jpg" class="img__sms" alt="sms logo">
+    <!--Modal section-->
+    <section id="modal">
+        <section class="modal__content">
+            <section id="modal__content__close">+</section>
+            <h3>Del din ønskeseddel med:</h3>
+            <section class="modal__content__img">
+                <img src="css/billeder/1200px-Facebook_New_Logo_(2015).svg.png" class="img__facebook" alt="Facebook logo">
+                <img src="css/billeder/Gmail-Logo.png" class="img__mail" alt="G-mail logo">
+                <img src="css/billeder/sms-logo.jpg" class="img__sms" alt="sms logo">
+            </section>
+            <button id="button">Færdig</button>
         </section>
-        <button id="button">Færdig</button>
     </section>
-</section>
 
 
 
-<a class="frank__a" href="forside.html">Tilbage til forsiden</a>
-
-<script src="seddel.js"></script>
+    <script src="seddel.js"></script>
 </body>
 
 </html>
