@@ -26,11 +26,9 @@ nav{
     background: rgba(0, 0, 0, 0.438);
     display: flex;
     justify-content: space-around;
- 
-    // box-shadow info --->  https://generatepress.com/forums/topic/shadow-under-nav-bar/
-    box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
     a{
         color: map-get($map: $colors, $key: neutral);
+        font-size: 0.9em;
     }
 
 }
