@@ -69,12 +69,6 @@
 }
 
 @media (min-width: 600px) {
-  .redhotchilipeppers section img {
-    height: 80px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    width: 80%;
-  }
   .redhotchilipeppers .hris {
     width: 70%;
   }

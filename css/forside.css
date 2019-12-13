@@ -88,6 +88,10 @@
           transform: rotate(5deg);
 }
 
+.gifts, .radish__logo {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .radish {
     display: -ms-grid;

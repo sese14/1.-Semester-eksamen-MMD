@@ -195,7 +195,9 @@ p{
     }
     
     .frank #modal {
-      width: 110%;
+      position: absolute;
+      width: 110vw;
+      height: 110vh;
     }
   
     .frank .modal__content {
