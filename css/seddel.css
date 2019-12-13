@@ -180,6 +180,8 @@
   width: 70%;
   height: 11%;
   background-color: #F42929;
+  color: white;
+  border: none;
   border-radius: 7px;
   font-size: 1.3em;
   margin-top: 10%;
@@ -194,6 +196,7 @@
           transform: rotate(45deg);
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
   .frank nav a {
     padding-top: 1.5%;
@@ -257,4 +260,14 @@
     font-size: 75px;
   }
 }
+
+/* Media Queries Iphone 6/7/8 */
+@media (max-height: 700px) {
+  .frank h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Media Queries Iphone 6/7/8 Plus - None*/
+/* Media Queries Desktop */
 /*# sourceMappingURL=seddel.css.map */

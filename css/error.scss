@@ -31,7 +31,6 @@ $colors: (
     }
 
 }
-  
       .hris{
           grid-column: 1/3;
           grid-row: 1;
@@ -56,6 +55,8 @@ $colors: (
   }
 }
 
+/* Media Queries Tablet */
+
 @media (min-width: 600px){ 
     
   
@@ -69,3 +70,14 @@ $colors: (
       font-size: 2.2em;
     }
   }
+
+/* Media Queries Iphone 6/7/8 */
+
+
+/* MANGLER FIXED BOKS (a) */
+
+
+/* Media Queries Iphone 6/7/8 Plus - None */
+
+
+/* Media Queries Desktop */

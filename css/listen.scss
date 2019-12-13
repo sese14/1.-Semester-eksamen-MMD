@@ -41,7 +41,8 @@ $colors: (
     }
     p{
         grid-column: 2;
-        padding-left: 20vw;
+        padding-left: 12vw;
+        padding-top: 3vh;
     }
 
 nav{
@@ -87,6 +88,8 @@ button{
     }
     }
 
+    /* Media Queries Tablet */
+
     @media (min-width:600px) {
         .pineapple h2 {
           font-size: 2.5em;
@@ -104,3 +107,25 @@ button{
           padding-top: 1vh;
         }
       }
+
+
+    /* Media Queries Iphone 6/7/8 */
+
+    @media (max-height: 700px) {
+        .pineapple h2 {
+            font-size: 1.8em;
+          }
+          .pineapple h3 {
+            font-size: 1em;
+          }
+          .pineapple p {
+            padding-left: 12vw;
+            padding-top: 3vh;
+            font-size: 1em;;
+          }
+        }
+
+/* Media Queries Iphone 6/7/8 Plus - None */
+   
+
+/* Media Queries Desktop */

@@ -65,6 +65,7 @@
   font-size: 1.6em;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .frid img {
@@ -74,6 +75,7 @@
   width: 100%;
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
   .frid p {
     font-size: 1em;
@@ -101,4 +103,34 @@
     width: 80%;
   }
 }
+
+/* Media Queries Iphone 6/7/8 */
+@media (max-height: 700px) {
+  ::-webkit-input-placeholder {
+    font-size: 1.5em;
+  }
+  :-ms-input-placeholder {
+    font-size: 1.5em;
+  }
+  ::-ms-input-placeholder {
+    font-size: 1.5em;
+  }
+  ::placeholder {
+    font-size: 1.5em;
+  }
+  .frid a {
+    font-size: 2em;
+    height: 50px;
+    width: 80%;
+  }
+  .frid img {
+    z-index: -2;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+  }
+}
+
+/* Media Queries Iphone 6/7/8 Plus - NONE*/
+/* Media Queries Desktop */
 /*# sourceMappingURL=opret.css.map */

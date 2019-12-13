@@ -15,6 +15,7 @@ $colors: (
     width: 100vw;
     overflow: hidden;
     justify-items: center;
+
     h2{
         padding-top: 7vh;
         margin: 0;
@@ -45,6 +46,7 @@ $colors: (
             background-color: map-get($map: $colors, $key: primary);
             color: map-get($map: $colors, $key:tezt);
             font-size: 1.6em;
+            text-decoration: none;
             border-radius:10px ;}
 
     img{
@@ -52,19 +54,21 @@ $colors: (
         position: absolute;
         bottom: -3%;
         width: 100%;
-
     }
 }
+
+/* Media Queries Tablet */
 
 @media (min-width: 600px){
 
   .give-me-my-fucking-money-Susan h2 {
     padding-top: 12vh;
     margin: 0;
+    font-size: 2.5em;
   }
   
   .give-me-my-fucking-money-Susan section input {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
   
   .give-me-my-fucking-money-Susan a {
@@ -75,3 +79,25 @@ $colors: (
     width: 90%;
   }
  }
+
+  /* Media Queries Iphone 6/7/8 */
+
+  @media (max-height: 700px){ 
+  
+    .give-me-my-fucking-money-Susan section input {
+      font-size: 0.8em;
+    }
+    
+    .give-me-my-fucking-money-Susan a {
+      font-size: 1.6em;
+    }
+    
+    .give-me-my-fucking-money-Susan img {
+      width: 90%;
+    }
+   }
+
+     /* Media Queries Iphone 6/7/8 Plus - None */
+
+
+     /* Media Queries Desktop */

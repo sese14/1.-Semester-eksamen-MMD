@@ -59,6 +59,7 @@
   background-color: #F42929;
   color: white;
   font-size: 1.6em;
+  text-decoration: none;
   border-radius: 10px;
 }
 
@@ -69,13 +70,15 @@
   width: 100%;
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
   .give-me-my-fucking-money-Susan h2 {
     padding-top: 12vh;
     margin: 0;
+    font-size: 2.5em;
   }
   .give-me-my-fucking-money-Susan section input {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
   .give-me-my-fucking-money-Susan a {
     font-size: 2em;
@@ -84,4 +87,20 @@
     width: 90%;
   }
 }
+
+/* Media Queries Iphone 6/7/8 */
+@media (max-height: 700px) {
+  .give-me-my-fucking-money-Susan section input {
+    font-size: 0.8em;
+  }
+  .give-me-my-fucking-money-Susan a {
+    font-size: 1.6em;
+  }
+  .give-me-my-fucking-money-Susan img {
+    width: 90%;
+  }
+}
+
+/* Media Queries Iphone 6/7/8 Plus - None */
+/* Media Queries Desktop */
 /*# sourceMappingURL=opretoensk.css.map */

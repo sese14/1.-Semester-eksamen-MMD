@@ -68,6 +68,7 @@
   font-size: 1.3em;
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
   .redhotchilipeppers .hris {
     width: 70%;
@@ -79,4 +80,9 @@
     font-size: 2.2em;
   }
 }
+
+/* Media Queries Iphone 6/7/8 */
+/* MANGLER FIXED BOKS (a) */
+/* Media Queries Iphone 6/7/8 Plus - None */
+/* Media Queries Desktop */
 /*# sourceMappingURL=error.css.map */

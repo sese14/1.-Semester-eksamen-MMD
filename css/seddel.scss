@@ -142,6 +142,8 @@ p{
         width: 70%;
         height: 11%;
         background-color: map-get($colors, primary);
+        color: white;
+        border: none;
         border-radius: 7px;
         font-size: 1.3em;
         margin-top: 10%;
@@ -159,6 +161,7 @@ p{
 
 }
 
+/* Media Queries Tablet */
 
 @media (min-width: 600px) {
     .frank nav a {
@@ -236,4 +239,17 @@ p{
       font-size: 75px;
     }
   }
+
+   /* Media Queries Iphone 6/7/8 */
+
+  @media (max-height: 700px) {
+    .frank h2{
+      font-size: 1.8em;
+    }
+  }
   
+/* Media Queries Iphone 6/7/8 Plus - None*/
+
+
+
+/* Media Queries Desktop */

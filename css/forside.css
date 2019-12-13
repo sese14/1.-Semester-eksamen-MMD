@@ -69,7 +69,15 @@
   height: 60px;
   font-size: 1.6em;
   text-align: center;
-  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid 0px black;
   border-radius: 10px;
   text-decoration: none;
@@ -92,6 +100,7 @@
   display: none;
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
   .radish {
     display: -ms-grid;
@@ -126,4 +135,8 @@
     width: 70%;
   }
 }
+
+/* Media Queries Iphone 6/7/8 - None*/
+/* Media Queries Iphone 6/7/8 Plus - None */
+/* Media Queries Desktop */
 /*# sourceMappingURL=forside.css.map */
