@@ -23,12 +23,11 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   z-index: +2;
-  -webkit-box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
-          box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
 }
 
 .redhotchilipeppers nav a {
   color: #f3f3f3;
+  font-size: 0.9em;
 }
 
 .redhotchilipeppers .hris {

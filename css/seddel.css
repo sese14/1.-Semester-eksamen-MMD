@@ -20,16 +20,15 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
-          box-shadow: 0 0px 20px 1px rgba(0, 0, 0, 0.699);
 }
 
 .frank nav a {
   color: #f3f3f3;
+  font-size: 0.9em;
 }
 
 .frank h2 {
-  font-size: 1.6em;
+  font-size: 2em;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
@@ -50,7 +49,6 @@
 
 .frank .john p {
   margin: 0;
-  font-size: 1em;
 }
 
 .frank .john a {
@@ -129,7 +127,6 @@
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
-
   border: black solid 1px;
   height: 10vw;
   width: 10vw;
@@ -197,7 +194,6 @@
           transform: rotate(45deg);
 }
 
-/*# sourceMappingURL=seddel.css.map */
 
 
 @media (min-width: 600px) {
@@ -287,26 +283,3 @@
   }
 }
 /*# sourceMappingURL=seddel.css.map */
-
-  
-  .img__facebook {
-    width: 140%;
-  }
-
-  .img__mail {
-    width: 110%;
-  }
-
-  .img__sms {
-    width: 140%;
-  }
-
-  
-  .frank .modal__content button {
-    font-size: 2em;
-  }
-  
-  .frank #modal__content__close {
-    font-size: 75px;
-  }
-}
