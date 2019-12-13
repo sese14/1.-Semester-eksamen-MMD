@@ -73,4 +73,32 @@
   bottom: 0;
   width: 100%;
 }
+
+@media (min-width: 600px) {
+  .frid p {
+    font-size: 1em;
+    padding-top: 2%;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 2em;
+  }
+  :-ms-input-placeholder {
+    font-size: 2em;
+  }
+  ::-ms-input-placeholder {
+    font-size: 2em;
+  }
+  ::placeholder {
+    font-size: 2em;
+  }
+  .frid a {
+    font-size: 2em;
+  }
+  .frid img {
+    z-index: -2;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=opret.css.map */
