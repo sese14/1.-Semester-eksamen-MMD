@@ -33,11 +33,7 @@
   font-size: 0.9em;
 }
 
-.radish .logud {
-  position: absolute;
-}
-
-.radish img {
+.radish .tree {
   position: absolute;
   bottom: -2%;
   right: -30%;
@@ -81,32 +77,153 @@
   border-radius: 10px;
   text-decoration: none;
   color: white;
+  opacity: 0;
 }
 
 .radish .groupster .make, .radish .groupster .sell {
   background-color: #3C4BFF;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
 }
 
 .radish .groupster .se {
   background-color: #F42929;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
 }
 
-.gifts, .radish__logo {
+.radish .groupster .make {
+  -webkit-animation: yourAnimationblue .8s forwards 1.4s ease-out;
+          animation: yourAnimationblue .8s forwards 1.4s ease-out;
+}
+
+.radish .groupster .se {
+  -webkit-animation: yourAnimationred .8s forwards 1s ease-out;
+          animation: yourAnimationred .8s forwards 1s ease-out;
+}
+
+.radish .groupster .sell {
+  -webkit-animation: yourAnimationblue 1s forwards 0s ease-out;
+          animation: yourAnimationblue 1s forwards 0s ease-out;
+}
+
+.radish .gifts, .radish .radish__logo {
   display: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@-webkit-keyframes yourAnimationblue {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes yourAnimationblue {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@-webkit-keyframes yourAnimationred {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes yourAnimationred {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
 }
 
 @media (min-width: 600px) {
+  .radish {
+    -ms-grid-rows: 20% 60% 20%;
+        grid-template-rows: 20% 60% 20%;
+  }
+  .gifts, .radish__logo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   .tree {
     display: none;
   }
+  .groupster {
+    height: 60vh;
+    padding: 0 !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gifts {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60vh;
+    z-index: -2;
+    opacity: 80%;
+  }
+  .radish__logo {
+    height: 23vh;
+  }
   .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
     font-size: 2.5em;
-    height: 12vh;
+    height: 10vh;
+    width: 60%;
     border-radius: 25px;
+  }
+  .radish nav a {
+    font-size: 1.4em;
   }
 }
 /*# sourceMappingURL=forside.css.map */

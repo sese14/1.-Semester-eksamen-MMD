@@ -32,10 +32,8 @@ nav{
     }
 
 }
-.logud{
-    position: absolute;
-}
-img{
+
+.tree{
     position: absolute;
     bottom: -2%;
     right: -30%;
@@ -63,38 +61,110 @@ img{
     border: solid 0px black;
     border-radius: 10px;
     text-decoration: none;
-    color: map-get($map: $colors, $key: tezt );
+    color: map-get($map: $colors, $key: tezt);
+    opacity: 0;
 }
 
 .make, .sell{
-    background-color: map-get($map: $colors, $key:secondary );
-    transform: rotate(-2deg);}
+    background-color: map-get($map: $colors, $key:secondary );}
+    
 .se{
     background-color: map-get($map: $colors, $key: primary );
-    transform: rotate(5deg);}
+    
+}
 
-}}
+    .make{
+            animation: yourAnimationblue .8s forwards 1.4s ease-out;
+        }
+        .se{
+            animation: yourAnimationred .8s forwards 1s ease-out;
+        }
+        .sell{
+            animation: yourAnimationblue 1s forwards 0s ease-out;
+        }
+    
+    }
 
 .gifts, .radish__logo{
     display:none;
+    justify-self: center;
 
+}}
+
+
+@keyframes yourAnimationblue{
+    0%{
+        transform: translateY(-800%);
+        opacity: 1;
+        }
+      
+    80%{
+        transform: translateY( 40%);
+    }
+        
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        transform: rotate(-2deg);
+        }
+}
+@keyframes yourAnimationred{
+    0%{
+        transform: translateY(-800%);
+        opacity: 1;
+        }
+      
+    80%{
+        transform: translateY( 40%);
+    }
+        
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        transform: rotate(5deg);
+        }
 }
 
-
 @media (min-width: 600px){ 
+
+    .radish{
+        grid-template-rows: 20% 60% 20%;
+    }
   
- 
+    .gifts, .radish__logo{
+        display: flex !important;}
+
     .tree{
         display: none;
     }
-    
-    
+
+    .groupster{
+        height:60vh;
+        padding: 0 !important;
+        justify-content: space-between;
+       
+    }
+    .gifts{
+        width: 100%;
+       position: absolute;
+       bottom: 0;
+       height: 60vh;
+       z-index: -2;
+       opacity: 80%;
+    }
+    .radish__logo{
+        height: 23vh;
+    }
+
     .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
       font-size: 2.5em;
-      height: 12vh;
+      height: 10vh;
+      width: 60%;
       border-radius: 25px;
+
     }
    
-  }
-
-
+    .radish nav a{
+            font-size: 1.4em;
+    }
+}
