@@ -96,9 +96,7 @@
           box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
-
-@media (min-width:600px) {
-
+@media (min-width: 600px) {
   .pineapple h2 {
     font-size: 2.5em;
   }
@@ -108,20 +106,10 @@
   .pineapple p {
     padding-left: 12vw;
     padding-top: 3vh;
-
     font-size: 1.8em;
   }
   .pineapple nav a {
     padding-top: 1vh;
   }
 }
-    font-size: 1.8em;;
-  }
-  
-  .pineapple nav a {
-    padding-top: 1vh;
-  }
-}
 /*# sourceMappingURL=listen.css.map */
-
-

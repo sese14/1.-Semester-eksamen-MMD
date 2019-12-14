@@ -45,7 +45,7 @@ img{
 .groupster{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 45% 0%;
     width: 100%;
     align-items: center;
@@ -54,10 +54,12 @@ img{
 
 .make, .se, .sell{
     width: 80%;
-    height: 60px;
+    height: 10vh;
     font-size: 1.6em;
     text-align: center;
-    padding-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 0px black;
     border-radius: 10px;
     text-decoration: none;
@@ -80,42 +82,19 @@ img{
 
 
 @media (min-width: 600px){ 
-    .radish {
-      display: grid;
-    }
-    .radish .logud {
-      position: absolute;
-      font-size: 2em;
-      margin: 3%;
-    }
   
-    .radish__logo {
-      visibility: unset;
-      width: 40%;
-      justify-self: center;
-      margin-top: 15%;
-  
+ 
+    .tree{
+        display: none;
     }
     
-    .tree {
-      display: none;
-    }
-    
-    .radish .groupster {
-      padding: 10% 0%;
-    }
     
     .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
       font-size: 2.5em;
+      height: 12vh;
+      border-radius: 25px;
     }
-    
-    .gifts {
-        visibility: unset;
-        z-index: -2;
-        position: absolute;
-        bottom: -3%;
-        width: 70%;
-    }
+   
   }
 
 

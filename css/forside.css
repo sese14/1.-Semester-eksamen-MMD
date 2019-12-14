@@ -53,9 +53,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 45% 0%;
   width: 100%;
   -webkit-box-align: center;
@@ -66,10 +65,18 @@
 
 .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
   width: 80%;
-  height: 60px;
+  height: 10vh;
   font-size: 1.6em;
   text-align: center;
-  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid 0px black;
   border-radius: 10px;
   text-decoration: none;
@@ -93,37 +100,13 @@
 }
 
 @media (min-width: 600px) {
-  .radish {
-    display: -ms-grid;
-    display: grid;
-  }
-  .radish .logud {
-    position: absolute;
-    font-size: 2em;
-    margin: 3%;
-  }
-  .radish__logo {
-    visibility: unset;
-    width: 40%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin-top: 15%;
-  }
   .tree {
     display: none;
   }
-  .radish .groupster {
-    padding: 10% 0%;
-  }
   .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
     font-size: 2.5em;
-  }
-  .gifts {
-    visibility: unset;
-    z-index: -2;
-    position: absolute;
-    bottom: -3%;
-    width: 70%;
+    height: 12vh;
+    border-radius: 25px;
   }
 }
 /*# sourceMappingURL=forside.css.map */
