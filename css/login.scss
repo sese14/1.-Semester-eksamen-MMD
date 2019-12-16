@@ -55,7 +55,6 @@ hr{
 }
 }
 
-
 p{
     font-size: 20px;
     grid-column: 1fr;
@@ -63,7 +62,7 @@ p{
 
 }
 
-/* Ipad version */
+/* Media Queries Tablet */
 
 @media (min-width: 600px){ 
     h1 {
@@ -152,4 +151,45 @@ right: 0;
 }
   }
   
+  /* Media Queries Iphone 6/7/8 */
 
+  @media (max-height: 700px){ 
+    h1 {
+      font-size: 1.8em;
+    }
+    .uffa{ 
+      overflow: auto;
+    }
+    .uffa .logo {
+      height: 25vh;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+    
+    .uffa .the-one {
+      width: 65%;
+    }
+   
+    .uffa .uffa__hr hr {
+      height: 1px;
+    }
+    
+    .uffa p {
+      font-size: 20px;
+    }
+  }
+  
+    /* Media Queries Iphone 6/7/8 + */
+
+    @media (max-height: 800px) {
+    h1 {
+      font-size: 1.8em;
+    }
+    .uffa{ 
+      overflow: auto;
+    }
+  }
+
+  /* Media Queries Desktop */

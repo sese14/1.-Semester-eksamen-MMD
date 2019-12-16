@@ -16,12 +16,14 @@ $colors: (
     width: 100vw;
     overflow: hidden;
     justify-items: center;
+
     .frid__bar{
       display: none;
     }
     .julbr{
       display: none;
     }
+
     h2{
         padding-top: 7vh;
         margin: 0;
@@ -58,6 +60,7 @@ $colors: (
         font-size: 1.6em;
         border-radius:10px ;
         cursor: pointer;
+        text-decoration: none;
     }
     .gift{
         z-index: -2;
@@ -66,6 +69,34 @@ $colors: (
         width: 100%;
     }
 }
+
+  /* Media Queries Iphone 6/7/8 Plus - NONE*/
+
+
+ /* Media Queries Iphone 6/7/8 */
+
+ @media (max-height: 700px){  
+  
+  ::placeholder {
+    font-size: 1.5em;
+  }
+  
+  .frid a {
+    font-size: 2em;
+    height: 50px;
+    width: 80%;
+  }
+  
+  .frid img {
+    z-index: -2;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+  }
+}
+
+
+/* Media Queries Tablet */
 
 @media (min-width: 600px){  
     .frid p {
@@ -88,6 +119,11 @@ $colors: (
       width: 80%;
     }
   }
+
+
+
+
+  /* Media Queries Desktop */
   @media (min-width: 1281px){
    .frid{
      display: grid;
@@ -152,4 +188,5 @@ left: 45%;
   right: 0;
 }
 
-    }
+}
+

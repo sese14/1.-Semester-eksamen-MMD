@@ -17,6 +17,7 @@ $colors: (
     .body__bar{
       display: none;
     }
+
     h2{
         padding-top: 7vh;
         margin: 0;
@@ -47,6 +48,7 @@ $colors: (
             background-color: map-get($map: $colors, $key: primary);
             color: map-get($map: $colors, $key:tezt);
             font-size: 1.6em;
+            text-decoration: none;
             border-radius:10px ;}
 
     .gaver{
@@ -54,7 +56,6 @@ $colors: (
         position: absolute;
         bottom: -3%;
         width: 100%;
-
     }
     .tree{
       display: none;
@@ -62,11 +63,37 @@ $colors: (
    
 }
 
+
+  /* Media Queries Iphone 6/7/8 */
+
+  @media (max-height: 700px){ 
+  
+    .give-me-my-fucking-money-Susan section input {
+      font-size: 0.8em;
+    }
+    
+    .give-me-my-fucking-money-Susan a {
+      font-size: 1.6em;
+    }
+    
+    .give-me-my-fucking-money-Susan img {
+      width: 90%;
+    }
+   }
+
+     /* Media Queries Iphone 6/7/8 Plus - None */
+
+
+
+
+/* Media Queries Tablet */
+
 @media (min-width: 600px){
 
   .body h2 {
     padding-top: 12vh;
     margin: 0;
+    font-size: 2.5em;
   }
   
   .body .fake-news input {
@@ -81,6 +108,9 @@ $colors: (
     width: 90%;
   }
  }
+
+
+     /* Media Queries Desktop */
 
  @media (min-width:1281px){
  .body{

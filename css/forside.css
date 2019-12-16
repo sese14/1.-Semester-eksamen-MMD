@@ -189,6 +189,7 @@
   }
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
   .radish {
     -ms-grid-rows: 20% 60% 20%;
@@ -313,4 +314,8 @@
     height: 10vh;
   }
 }
+
+/* Media Queries Iphone 6/7/8 - None*/
+/* Media Queries Iphone 6/7/8 Plus - None */
+/* Media Queries Desktop */
 /*# sourceMappingURL=forside.css.map */
