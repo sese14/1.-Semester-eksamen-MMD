@@ -13,6 +13,10 @@ $colors: (
     width: 100vw;
     text-align: center;
     
+    .pineapple__bar{
+        display: none;
+    }
+
     h2{
         font-size: 2em;
     }
@@ -88,6 +92,25 @@ button{
     }
     }
 
+    /* Media Queries Iphone 6/7/8 */
+
+    @media (max-height: 700px) {
+        .pineapple h2 {
+            font-size: 1.8em;
+          }
+          .pineapple h3 {
+            font-size: 1em;
+          }
+          .pineapple p {
+            padding-left: 12vw;
+            padding-top: 3vh;
+            font-size: 1em;;
+          }
+        }
+
+/* Media Queries Iphone 6/7/8 Plus - None */
+
+
     /* Media Queries Tablet */
 
     @media (min-width:600px) {
@@ -107,25 +130,114 @@ button{
           padding-top: 1vh;
         }
       }
-
-
-    /* Media Queries Iphone 6/7/8 */
-
-    @media (max-height: 700px) {
-        .pineapple h2 {
-            font-size: 1.8em;
-          }
-          .pineapple h3 {
-            font-size: 1em;
-          }
-          .pineapple p {
-            padding-left: 12vw;
-            padding-top: 3vh;
-            font-size: 1em;;
-          }
-        }
-
-/* Media Queries Iphone 6/7/8 Plus - None */
    
 
 /* Media Queries Desktop */
+      @media (min-width: 1281px){
+        .pineapple .pineapple__bar{
+          display: flex;
+        }
+        .pineapple nav{
+          display: none;
+        }
+        .pineapple{
+            overflow: auto;
+          display: grid;
+          grid-template-columns:  1fr 1fr;
+        }
+        .pineapple .a, .pineapple .c{
+            grid-column: 1;   
+        }
+        .pineapple .b, .pineapple .d{
+            grid-column: 2;   
+        }
+        .pineapple .nin, .pineapple .tru{
+            grid-column: 1;
+        }
+        .pineapple .jam, .pineapple .hum{
+            grid-column: 2;
+        }
+        .pineapple .a{
+            grid-row: 3;
+        }
+        .pineapple .b{
+            grid-row: 3;
+        }
+        .pineapple .c{
+            grid-row: 5;
+        }
+        .pineapple .d{
+            grid-row: 5;
+        }
+        
+
+        .pineapple .pineapple__hr h3{
+            justify-self: center;
+            align-self: center;
+        }
+      
+        .pineapple h2{
+            padding-top: 7vh ;
+            padding-bottom: 2vh;
+            text-decoration: underline;
+            font-size: 2.6em;
+        }
+        .pineapple .thatslife p{
+            padding-left: 6vw;
+            display: flex;
+            align-items: center;
+        }
+        .pineapple .thatslife img{
+            align-self: center;
+        }
+
+        .pineapple__bar{
+         grid-column: 1/4;
+         grid-row: 1;
+          display: flex;
+         border: solid 1px;
+         width: 100%;
+         height: 10vh;
+         background: map-get($map: $colors, $key:tezt );
+         justify-content: space-between;
+        }
+        .pineapple .pineapple__bar .bar__left{
+            display: flex;
+            padding-left: 1vw;
+            align-items: center;
+          }
+          .pineapple .pineapple__bar img{
+            height: 10vh;
+          }
+          .pineapple .pineapple__bar .logud{
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            padding-right: 1vw;
+          }
+          .pineapple .pineapple__bar .bar__center{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+          }
+          .pineapple .pineapple__bar .bar__center a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 8vh; 
+            width: 30%;
+            font-size: 2em;
+            color: map-get($map: $colors, $key: tezt);
+            text-decoration: none;
+          }
+          .pineapple .pineapple__bar .bar__center .make,
+          .pineapple .pineapple__bar .bar__center .sell {
+            background: map-get($map: $colors, $key: secondary);
+          }
+          .pineapple .pineapple__bar .bar__center .se{
+            background: map-get($map: $colors, $key: primary);
+          }
+          .pineapple h2{
+              grid-column: 1/3;
+        }}

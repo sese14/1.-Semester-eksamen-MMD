@@ -17,11 +17,18 @@ $colors: (
     overflow: hidden;
     justify-items: center;
 
+    .frid__bar{
+      display: none;
+    }
+    .julbr{
+      display: none;
+    }
+
     h2{
         padding-top: 7vh;
         margin: 0;
     }
-    section{
+    .frid__input{
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -41,7 +48,7 @@ $colors: (
         text-align: center;
     }
     
-    a{
+   .frid__a{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,7 +62,7 @@ $colors: (
         cursor: pointer;
         text-decoration: none;
     }
-    img{
+    .gift{
         z-index: -2;
         position: absolute;
         bottom: 0;
@@ -63,29 +70,7 @@ $colors: (
     }
 }
 
-/* Media Queries Tablet */
-
-@media (min-width: 600px){  
-    .frid p {
-      font-size: 1em;
-      padding-top: 2%;
-    }
-  
-    ::placeholder {
-      font-size: 2em;
-    }
-    
-    .frid a {
-      font-size: 2em;
-    }
-    
-    .frid img {
-      z-index: -2;
-      position: absolute;
-      bottom: 0;
-      width: 80%;
-    }
-  }
+  /* Media Queries Iphone 6/7/8 Plus - NONE*/
 
 
  /* Media Queries Iphone 6/7/8 */
@@ -110,7 +95,98 @@ $colors: (
   }
 }
 
-  /* Media Queries Iphone 6/7/8 Plus - NONE*/
+
+/* Media Queries Tablet */
+
+@media (min-width: 600px){  
+    .frid p {
+      font-size: 1em;
+      padding-top: 2%;
+    }
+  
+    ::placeholder {
+      font-size: 2em;
+    }
+    
+    .frid a {
+      font-size: 2em;
+    }
+    
+    .frid .gift {
+      z-index: -2;
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+    }
+  }
+
+
 
 
   /* Media Queries Desktop */
+  @media (min-width: 1281px){
+   .frid{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 20% 35% 10% 35%;
+   }
+    .frid h2{
+     padding-top: 15vh;
+     grid-column: 1;
+   }
+   .frid .frid__input input, .frid .frid__a{
+     width:50%;
+
+     grid-column: 1;
+   }
+   .frid .frid__input, .frid p{
+    grid-column: 1;
+   }
+    .frid .frid__bar{
+      
+      display: flex;
+      position: absolute;
+      width: 100%;
+      border: solid 1px;
+      height: 10vh;
+      flex-direction: row;
+      justify-content: space-between;
+      background: map-get($map: $colors, $key: tezt);
+    }
+    .frid .frid__bar .bar__left{
+      
+      display: flex;
+    }
+
+    .frid .frid__bar h3{
+      font-size: 3em;
+      display: flex;
+      align-items: center;
+      padding-left: 1vw;
+    }
+    
+.frid .frid__bar img{
+  height: 10vh;
+}
+
+.frid .bar__a{  
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right:1vw ;
+}
+.frid .gift{
+max-height: 760px;
+max-width: 1200px;
+left: 45%;
+}
+.frid .julbr{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+}
+

@@ -15,7 +15,9 @@ grid-template-columns: 1fr;
 overflow: hidden;
 position: fixed;
 margin: 0;
-
+.radish__bar{
+    display: none;
+}
 nav{
     border: solid 1px;
     position: fixed;
@@ -32,10 +34,8 @@ nav{
     }
 
 }
-.logud{
-    position: absolute;
-}
-img{
+
+.tree{
     position: absolute;
     bottom: -2%;
     right: -30%;
@@ -45,7 +45,7 @@ img{
 .groupster{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 45% 0%;
     width: 100%;
     align-items: center;
@@ -54,7 +54,7 @@ img{
 
 .make, .se, .sell{
     width: 80%;
-    height: 60px;
+    height: 10vh;
     font-size: 1.6em;
     text-align: center;
     display: flex;
@@ -63,63 +63,173 @@ img{
     border: solid 0px black;
     border-radius: 10px;
     text-decoration: none;
-    color: map-get($map: $colors, $key: tezt );
+    color: map-get($map: $colors, $key: tezt);
+    opacity: 0;
 }
 
 .make, .sell{
-    background-color: map-get($map: $colors, $key:secondary );
-    transform: rotate(-2deg);}
+    background-color: map-get($map: $colors, $key:secondary );}
+    
 .se{
     background-color: map-get($map: $colors, $key: primary );
-    transform: rotate(5deg);}
+    
+}
 
-}}
+    .make{
+            animation: yourAnimationblue .8s forwards 1.4s ease-out;
+        }
+        .se{
+            animation: yourAnimationred .8s forwards 1s ease-out;
+        }
+        .sell{
+            animation: yourAnimationblue 1s forwards 0s ease-out;
+        }
+    
+    }
 
 .gifts, .radish__logo{
     display:none;
+    justify-self: center;
 
-}
+}}
 
 /* Media Queries Tablet */
 
+@keyframes yourAnimationblue{
+    0%{
+        transform: translateY(-800%);
+        opacity: 1;
+        }
+      
+    80%{
+        transform: translateY( 40%);
+    }
+        
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        transform: rotate(-2deg);
+        }
+}
+@keyframes yourAnimationred{
+    0%{
+        transform: translateY(-800%);
+        opacity: 1;
+        }
+      
+    80%{
+        transform: translateY( 40%);
+    }
+        
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        transform: rotate(5deg);
+        }
+}
+
 @media (min-width: 600px){ 
-    .radish {
-      display: grid;
-    }
-    .radish .logud {
-      position: absolute;
-      font-size: 2em;
-      margin: 3%;
+
+    .radish{
+        grid-template-rows: 20% 60% 20%;
     }
   
-    .radish__logo {
-      visibility: unset;
-      width: 40%;
-      justify-self: center;
-      margin-top: 15%;
-  
+    .radish .gifts, .radish .radish__logo{
+        display: flex ;}
+
+    .tree{
+        display: none;
     }
-    
-    .tree {
-      display: none;
+
+    .groupster{
+        height:60vh;
+        padding: 0 !important;
+        justify-content: space-between;
+       
     }
-    
-    .radish .groupster {
-      padding: 10% 0%;
+    .gifts{
+        width: 100%;
+       position: absolute;
+       bottom: 0;
+       height: 60vh;
+       z-index: -2;
+       opacity: 80%;
     }
-    
+    .radish__logo{
+        height: 23vh;
+    }
+
     .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
       font-size: 2.5em;
+      height: 10vh;
+      width: 60%;
+      border-radius: 25px;
+
+    }
+   
+    .radish nav a{
+            font-size: 1.4em;
+    }
+}
+@media (min-width: 1281px){
+.radish{
+    grid-template-rows: 50% 30% 20%;
+}
+.radish .radish__logo{
+    height: 100%;
+    padding-top: 10vh;
+}
+
+    .radish nav{
+        display: none;
+    }
+    .radish .gifts{
+        display: none;
+    }
+.radish .groupster{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.radish .radish__bar .bar__left{
+    display: flex;
+}
+.bar__a{  
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right:1vw ;
+    font-size: 2em;
+}
+    .radish .radish__bar{   
+        display: flex;
+        position: absolute;
+        width: 100%;
+        border: solid 1px;
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-between;
+        background: map-get($map: $colors, $key: tezt);
+     
+    }
+    .radish .radish__bar h3{
+      font-size: 3em;
+      display: flex;
+      align-items: center;
+      padding-left: 1vw;;
     }
     
-    .gifts {
-        visibility: unset;
-        z-index: -2;
-        position: absolute;
-        bottom: -3%;
-        width: 70%;
+    .radish .radish__bar img{
+      height: 10vh;
     }
-  }
+
 
 /* Media Queries Iphone 6/7/8 - None*/
 
@@ -131,3 +241,4 @@ img{
 
 
 
+}

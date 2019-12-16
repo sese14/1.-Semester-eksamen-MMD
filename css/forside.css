@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+.radish .radish__bar {
+  display: none;
+}
+
 .radish nav {
   border: solid 1px;
   position: fixed;
@@ -33,11 +37,7 @@
   font-size: 0.9em;
 }
 
-.radish .logud {
-  position: absolute;
-}
-
-.radish img {
+.radish .tree {
   position: absolute;
   bottom: -2%;
   right: -30%;
@@ -53,9 +53,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 45% 0%;
   width: 100%;
   -webkit-box-align: center;
@@ -66,7 +65,7 @@
 
 .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
   width: 80%;
-  height: 60px;
+  height: 10vh;
   font-size: 1.6em;
   text-align: center;
   display: -webkit-box;
@@ -82,57 +81,237 @@
   border-radius: 10px;
   text-decoration: none;
   color: white;
+  opacity: 0;
 }
 
 .radish .groupster .make, .radish .groupster .sell {
   background-color: #3C4BFF;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
 }
 
 .radish .groupster .se {
   background-color: #F42929;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
 }
 
-.gifts, .radish__logo {
+.radish .groupster .make {
+  -webkit-animation: yourAnimationblue .8s forwards 1.4s ease-out;
+          animation: yourAnimationblue .8s forwards 1.4s ease-out;
+}
+
+.radish .groupster .se {
+  -webkit-animation: yourAnimationred .8s forwards 1s ease-out;
+          animation: yourAnimationred .8s forwards 1s ease-out;
+}
+
+.radish .groupster .sell {
+  -webkit-animation: yourAnimationblue 1s forwards 0s ease-out;
+          animation: yourAnimationblue 1s forwards 0s ease-out;
+}
+
+.radish .gifts, .radish .radish__logo {
   display: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@-webkit-keyframes yourAnimationblue {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes yourAnimationblue {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@-webkit-keyframes yourAnimationred {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes yourAnimationred {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
 }
 
 /* Media Queries Tablet */
 @media (min-width: 600px) {
   .radish {
-    display: -ms-grid;
-    display: grid;
+    -ms-grid-rows: 20% 60% 20%;
+        grid-template-rows: 20% 60% 20%;
   }
-  .radish .logud {
-    position: absolute;
-    font-size: 2em;
-    margin: 3%;
-  }
-  .radish__logo {
-    visibility: unset;
-    width: 40%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin-top: 15%;
+  .radish .gifts, .radish .radish__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .tree {
     display: none;
   }
-  .radish .groupster {
-    padding: 10% 0%;
+  .groupster {
+    height: 60vh;
+    padding: 0 !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gifts {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60vh;
+    z-index: -2;
+    opacity: 80%;
+  }
+  .radish__logo {
+    height: 23vh;
   }
   .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
     font-size: 2.5em;
+    height: 10vh;
+    width: 60%;
+    border-radius: 25px;
   }
-  .gifts {
-    visibility: unset;
-    z-index: -2;
+  .radish nav a {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1281px) {
+  .radish {
+    -ms-grid-rows: 50% 30% 20%;
+        grid-template-rows: 50% 30% 20%;
+  }
+  .radish .radish__logo {
+    height: 100%;
+    padding-top: 10vh;
+  }
+  .radish nav {
+    display: none;
+  }
+  .radish .gifts {
+    display: none;
+  }
+  .radish .groupster {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-self: center;
+  }
+  .radish .radish__bar .bar__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bar__a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding-right: 1vw;
+    font-size: 2em;
+  }
+  .radish .radish__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
-    bottom: -3%;
-    width: 70%;
+    width: 100%;
+    border: solid 1px;
+    height: 10vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+  }
+  .radish .radish__bar h3 {
+    font-size: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1vw;
+  }
+  .radish .radish__bar img {
+    height: 10vh;
   }
 }
 
