@@ -1,0 +1,193 @@
+.uffa {
+  justify-items: center;
+  background-color: #f3f3f3;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+}
+
+.uffa .uffa__images {
+  display: none;
+}
+
+.uffa .uffa__bar {
+  display: none;
+}
+
+.uffa .logo {
+  height: 30vh;
+}
+
+.uffa .the-one {
+  width: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.uffa .the-one img {
+  height: 100px;
+}
+
+.uffa .uffa__hr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.uffa .uffa__hr h2 {
+  margin: 0;
+  padding: 3vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.uffa .uffa__hr hr {
+  border: none;
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.uffa p {
+  font-size: 20px;
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+}
+
+/* Media Queries Tablet */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  .uffa {
+    overflow: auto;
+  }
+  .uffa .logo {
+    height: 40vh;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .uffa .the-one {
+    width: 65%;
+  }
+  .uffa .uffa__hr hr {
+    height: 1px;
+  }
+  .uffa p {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .uffa .uffa__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border: solid 1px;
+    height: 10vh;
+    background: white;
+  }
+  .uffa .uffa__bar h3 {
+    font-size: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1vw;
+  }
+  .uffa .uffa__bar img {
+    height: 10vh;
+  }
+  .uffa .logo {
+    display: none;
+  }
+  .uffa h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+  }
+  .uffa h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .uffa .the-one {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 20%;
+  }
+  .uffa .the-one img {
+    height: 150px;
+  }
+  .uffa .uffa__hr {
+    width: 30%;
+  }
+  .uffa .uffa__images {
+    display: block;
+  }
+  .uffa__images__1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .uffa__images__2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40vw;
+  }
+}
+
+/* Media Queries Iphone 6/7/8 */
+@media (max-height: 700px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .uffa {
+    overflow: auto;
+  }
+  .uffa .logo {
+    height: 25vh;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .uffa .the-one {
+    width: 65%;
+  }
+  .uffa .uffa__hr hr {
+    height: 1px;
+  }
+  .uffa p {
+    font-size: 20px;
+  }
+}
+
+/* Media Queries Iphone 6/7/8 + */
+@media (max-height: 800px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .uffa {
+    overflow: auto;
+  }
+}
+
+/* Media Queries Desktop */
+/*# sourceMappingURL=login.css.map */
