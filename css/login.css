@@ -9,6 +9,14 @@
   margin: 0;
 }
 
+.uffa .uffa__images {
+  display: none;
+}
+
+.uffa .uffa__bar {
+  display: none;
+}
+
 .uffa .logo {
   height: 30vh;
 }
@@ -46,7 +54,7 @@
 .uffa .uffa__hr hr {
   border: none;
   background-color: black;
-  height: 0.5px;
+  height: 1px;
   width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -81,6 +89,68 @@
   }
   .uffa p {
     font-size: 35px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .uffa .uffa__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border: solid 1px;
+    height: 10vh;
+    background: white;
+  }
+  .uffa .uffa__bar h3 {
+    font-size: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1vw;
+  }
+  .uffa .uffa__bar img {
+    height: 10vh;
+  }
+  .uffa .logo {
+    display: none;
+  }
+  .uffa h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+  }
+  .uffa h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .uffa .the-one {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 20%;
+  }
+  .uffa .the-one img {
+    height: 150px;
+  }
+  .uffa .uffa__hr {
+    width: 30%;
+  }
+  .uffa .uffa__images {
+    display: block;
+  }
+  .uffa__images__1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .uffa__images__2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40vw;
   }
 }
 /*# sourceMappingURL=login.css.map */

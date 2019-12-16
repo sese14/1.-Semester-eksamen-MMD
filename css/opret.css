@@ -11,12 +11,20 @@
   justify-items: center;
 }
 
+.frid .frid__bar {
+  display: none;
+}
+
+.frid .julbr {
+  display: none;
+}
+
 .frid h2 {
   padding-top: 7vh;
   margin: 0;
 }
 
-.frid section {
+.frid .frid__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +39,7 @@
           justify-content: space-between;
 }
 
-.frid section input {
+.frid .frid__input input {
   width: 80%;
   height: 20%;
   -ms-flex-item-align: center;
@@ -47,7 +55,7 @@
   text-align: center;
 }
 
-.frid a {
+.frid .frid__a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +75,7 @@
   cursor: pointer;
 }
 
-.frid img {
+.frid .gift {
   z-index: -2;
   position: absolute;
   bottom: 0;
@@ -94,11 +102,94 @@
   .frid a {
     font-size: 2em;
   }
-  .frid img {
+  .frid .gift {
     z-index: -2;
     position: absolute;
     bottom: 0;
     width: 80%;
+  }
+}
+
+@media (min-width: 1281px) {
+  .frid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 20% 35% 10% 35%;
+        grid-template-rows: 20% 35% 10% 35%;
+  }
+  .frid h2 {
+    padding-top: 15vh;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .frid .frid__input input, .frid .frid__a {
+    width: 50%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .frid .frid__input, .frid p {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .frid .frid__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    border: solid 1px;
+    height: 10vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+  }
+  .frid .frid__bar .bar__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .frid .frid__bar h3 {
+    font-size: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1vw;
+  }
+  .frid .frid__bar img {
+    height: 10vh;
+  }
+  .frid .bar__a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding-right: 1vw;
+  }
+  .frid .gift {
+    max-height: 760px;
+    max-width: 1200px;
+    left: 45%;
+  }
+  .frid .julbr {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 /*# sourceMappingURL=opret.css.map */
