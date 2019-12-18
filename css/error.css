@@ -1,4 +1,4 @@
-.redhotchilipeppers {
+.error__body {
   background-color: #f3f3f3;
   margin: 0;
   height: 100vh;
@@ -10,19 +10,19 @@
   overflow: hidden;
 }
 
-.redhotchilipeppers .sanbr {
+.error__body .body__image__Brjuleman__2 {
   display: none;
 }
 
-.redhotchilipeppers .gaver {
+.error__body .body__image__gift {
   display: none;
 }
 
-.redhotchilipeppers .red__bar {
+.error__body .body__bar {
   display: none;
 }
 
-.redhotchilipeppers nav {
+.error__body nav {
   border: solid 1px;
   position: fixed;
   bottom: 0;
@@ -38,12 +38,12 @@
   z-index: +2;
 }
 
-.redhotchilipeppers nav a {
+.error__body nav a {
   color: #f3f3f3;
   font-size: 0.9em;
 }
 
-.redhotchilipeppers .hris {
+.error__body .body__image__Brjuleman {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -57,7 +57,7 @@
   max-height: 820px;
 }
 
-.redhotchilipeppers .redhotchili__a {
+.error__body .body__a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -87,19 +87,17 @@
 
 /* Media Queries Iphone 6/7/8 */
 @media (max-height: 700px) {
-  .redhotchilipeppers {
+  .error__body {
     max-width: 550px;
   }
 }
 
-/* MANGLER FIXED BOKS (a) */
-/* Media Queries Iphone 6/7/8 Plus - None */
 /* Media Queries Tablet */
 @media (min-width: 600px) {
-  .redhotchilipeppers .hris {
+  .error__body .body__image__Brjuleman {
     width: 70%;
   }
-  .redhotchilipeppers .redhotchili__a {
+  .error__body .body__a {
     left: 7%;
     height: 100px;
     width: 300px;
@@ -109,21 +107,21 @@
 
 /* Media Queries Desktop */
 @media (min-width: 1281px) {
-  .redhotchilipeppers nav {
+  .error__body nav {
     display: none;
   }
-  .redhotchilipeppers .gaver, .redhotchilipeppers .red__bar {
+  .error__body .body__image__gift, .error__body .body__bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .redhotchilipeppers {
+  .error__body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .redhotchilipeppers .red__bar {
+  .error__body .body__bar {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -140,7 +138,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .redhotchilipeppers .red__bar .bar__left {
+  .error__body .body__bar .bar__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,10 +147,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .redhotchilipeppers .red__bar img {
+  .error__body .body__bar img {
     height: 10vh;
   }
-  .redhotchilipeppers .red__bar .logud {
+  .error__body .body__bar .body__logud {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,7 +160,7 @@
             align-items: center;
     padding-right: 1vw;
   }
-  .redhotchilipeppers .red__bar .bar__center {
+  .error__body .body__bar .bar__center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,7 +172,7 @@
             justify-content: space-between;
     width: 50%;
   }
-  .redhotchilipeppers .red__bar .bar__center a {
+  .error__body .body__bar .bar__center a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -184,23 +182,24 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
     height: 8vh;
     width: 30%;
     font-size: 2em;
     color: white;
     text-decoration: none;
   }
-  .redhotchilipeppers .red__bar .bar__center .make,
-  .redhotchilipeppers .red__bar .bar__center .sell {
+  .error__body .body__bar .bar__center .center__opret,
+  .error__body .body__bar .bar__center .center__seSeddel {
     background: #3C4BFF;
   }
-  .redhotchilipeppers .red__bar .bar__center .se {
+  .error__body .body__bar .bar__center .center__seKatalog {
     background: #F42929;
   }
-  .redhotchilipeppers .hris {
+  .error__body .body__image__Brjulemand {
     display: none;
   }
-  .redhotchilipeppers .sanbr {
+  .error__body .body__image__Brjuleman__2 {
     display: block;
     width: 35%;
     -ms-grid-column: 2;
@@ -216,13 +215,13 @@
     max-height: 760px;
     max-width: 467px;
   }
-  .redhotchilipeppers .gaver {
+  .error__body .body__image__gift {
     position: absolute;
     bottom: -15vh;
     width: 40%;
     opacity: 90%;
   }
-  .redhotchilipeppers .redhotchili__a {
+  .error__body .body__a {
     -webkit-transform: scale(1.6);
             transform: scale(1.6);
     margin-top: 50vh;
@@ -230,4 +229,7 @@
     font-size: 2.6em;
   }
 }
+
+/* MANGLER FIXED BOKS (a) */
+/* Media Queries Iphone 6/7/8 Plus - None */
 /*# sourceMappingURL=error.css.map */

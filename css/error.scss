@@ -1,3 +1,4 @@
+//basic color palet for all scss
 $colors: (
     primary: #F42929,
     secondary: #3C4BFF,
@@ -5,8 +6,8 @@ $colors: (
     tezt:rgb(255, 255, 255),
 );
 
-
-.redhotchilipeppers{
+//here start the mobil first development
+.error__body{
     background-color: map-get($map: $colors, $key:neutral );
     margin: 0;
   height: 100vh;
@@ -15,13 +16,13 @@ $colors: (
   grid-template-columns: .5fr 1fr;
   overflow: hidden;
  
-  .sanbr{
+  .body__image__Brjuleman__2{
     display: none;
   }
-    .gaver{
+    .body__image__gift{
     display: none;
   }
-  .red__bar{
+  .body__bar{
     display: none;
   }
   nav{
@@ -41,7 +42,7 @@ $colors: (
     }
 
 }
-      .hris{
+      .body__image__Brjuleman{
           grid-column: 1/3;
           grid-row: 1;
           justify-self: end;
@@ -50,7 +51,7 @@ $colors: (
           max-width: 425px;
           max-height: 820px;
   }
-  .redhotchili__a{
+  .body__a{
       grid-column: 1/2;
       grid-row: 1;
       align-self: center;
@@ -69,29 +70,26 @@ $colors: (
   }
 }
 
+
+//justifications for other devices
+
 /* Media Queries Iphone 6/7/8 */
 @media (max-height: 700px){
-.redhotchilipeppers{
+  .error__body{
   max-width: 550px;
 }
   
 }
-
-/* MANGLER FIXED BOKS (a) */
-
-
-/* Media Queries Iphone 6/7/8 Plus - None */
-
 
 /* Media Queries Tablet */
 
 @media (min-width: 600px){ 
     
   
-    .redhotchilipeppers .hris {
+    .error__body .body__image__Brjuleman {
       width: 70%;
     }
-    .redhotchilipeppers .redhotchili__a {
+    .error__body .body__a {
       left: 7%;
       height: 100px;
       width: 300px;
@@ -102,17 +100,17 @@ $colors: (
 
 /* Media Queries Desktop */
   @media (min-width:1281px){
-    .redhotchilipeppers nav{
+    .error__body nav{
       display: none;
     }
-    .redhotchilipeppers .gaver, .redhotchilipeppers .red__bar{
+    .error__body .body__image__gift, .error__body .body__bar{
       display: flex;
     }
-    .redhotchilipeppers{
+    .error__body{
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
-.redhotchilipeppers .red__bar{
+.error__body .body__bar{
   grid-column: 1/3;
   grid-row: 1;
   display: flex;
@@ -122,48 +120,49 @@ $colors: (
  background: map-get($map: $colors, $key:tezt );
  justify-content: space-between;
 }
-  .redhotchilipeppers .red__bar .bar__left{
+  .error__body .body__bar .bar__left{
     display: flex;
     padding-left: 1vw;
     align-items: center;
   }
-  .redhotchilipeppers .red__bar img{
+  .error__body .body__bar img{
     height: 10vh;
   }
-  .redhotchilipeppers .red__bar .logud{
+  .error__body .body__bar .body__logud{
     font-size: 2em;
     display: flex;
     align-items: center;
     padding-right: 1vw;
   }
-  .redhotchilipeppers .red__bar .bar__center{
+  .error__body .body__bar .bar__center{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 50%;
   }
-  .redhotchilipeppers .red__bar .bar__center a{
+  .error__body .body__bar .bar__center a{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 8vh; 
     width: 30%;
     font-size: 2em;
     color: map-get($map: $colors, $key: tezt);
     text-decoration: none;
   }
-  .redhotchilipeppers .red__bar .bar__center .make,
-  .redhotchilipeppers .red__bar .bar__center .sell {
+  .error__body .body__bar .bar__center .center__opret,
+  .error__body .body__bar .bar__center .center__seSeddel {
     background: map-get($map: $colors, $key: secondary);
   }
-  .redhotchilipeppers .red__bar .bar__center .se{
+  .error__body .body__bar .bar__center .center__seKatalog{
     background: map-get($map: $colors, $key: primary);
   }
-.redhotchilipeppers .hris{
+.error__body .body__image__Brjulemand{
   display: none;
 }
 
-    .redhotchilipeppers .sanbr{
+    .error__body .body__image__Brjuleman__2{
       display: block;
       width: 35%;
       grid-column: 2;
@@ -176,13 +175,13 @@ $colors: (
       max-height: 760px;
       max-width: 467px;
     }
-    .redhotchilipeppers .gaver{
+    .error__body .body__image__gift{
       position: absolute;
       bottom: -15vh;
       width: 40%;
       opacity: 90%;
     }
-    .redhotchilipeppers .redhotchili__a{
+    .error__body .body__a{
       transform: scale(1.6);
       margin-top: 50vh;
       border: solid .5px black;
@@ -190,3 +189,9 @@ $colors: (
       
     }
   }
+
+  //the following devices didnt need justifications
+/* MANGLER FIXED BOKS (a) */
+
+
+/* Media Queries Iphone 6/7/8 Plus - None */

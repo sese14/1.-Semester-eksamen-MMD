@@ -1,4 +1,4 @@
-.radish {
+.forside__body {
   background-color: #f3f3f3;
   height: 100vh;
   width: 100vw;
@@ -13,11 +13,11 @@
   margin: 0;
 }
 
-.radish .radish__bar {
+.forside__body .body__bar {
   display: none;
 }
 
-.radish nav {
+.forside__body nav {
   border: solid 1px;
   position: fixed;
   bottom: 0;
@@ -32,12 +32,12 @@
       justify-content: space-around;
 }
 
-.radish nav a {
+.forside__body nav a {
   color: #f3f3f3;
   font-size: 0.9em;
 }
 
-.radish .tree {
+.forside__body .body__image__tree {
   position: absolute;
   bottom: -2%;
   right: -30%;
@@ -45,7 +45,7 @@
   height: 70vh;
 }
 
-.radish .groupster {
+.forside__body .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@
   color: white;
 }
 
-.radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+.forside__body .buttons .buttons__opret, .forside__body .buttons .buttons__seKatalog, .forside__body .buttons .buttons__seSeddel {
   width: 80%;
   height: 10vh;
   font-size: 1.6em;
@@ -84,36 +84,35 @@
   opacity: 0;
 }
 
-.radish .groupster .make, .radish .groupster .sell {
+.forside__body .buttons .buttons__opret, .forside__body .buttons .buttons__seSeddel {
   background-color: #3C4BFF;
 }
 
-.radish .groupster .se {
+.forside__body .buttons .buttons__seKatalog {
   background-color: #F42929;
 }
 
-.radish .groupster .make {
+.forside__body .buttons .buttons__opret {
   -webkit-animation: yourAnimationblue .8s forwards 1.4s ease-out;
           animation: yourAnimationblue .8s forwards 1.4s ease-out;
 }
 
-.radish .groupster .se {
+.forside__body .buttons .buttons__seKatalog {
   -webkit-animation: yourAnimationred .8s forwards 1s ease-out;
           animation: yourAnimationred .8s forwards 1s ease-out;
 }
 
-.radish .groupster .sell {
+.forside__body .buttons .buttons__seSeddel {
   -webkit-animation: yourAnimationblue 1s forwards 0s ease-out;
           animation: yourAnimationblue 1s forwards 0s ease-out;
 }
 
-.radish .gifts, .radish .radish__logo {
+.forside__body .body__image__gift, .forside__body .body__logo {
   display: none;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-/* Media Queries Tablet */
 @-webkit-keyframes yourAnimationblue {
   0% {
     -webkit-transform: translateY(-800%);
@@ -132,6 +131,7 @@
             transform: rotate(-2deg);
   }
 }
+
 @keyframes yourAnimationblue {
   0% {
     -webkit-transform: translateY(-800%);
@@ -189,27 +189,28 @@
   }
 }
 
+/* Media Queries Tablet */
 @media (min-width: 600px) {
-  .radish {
+  .forside__body {
     -ms-grid-rows: 20% 60% 20%;
         grid-template-rows: 20% 60% 20%;
   }
-  .radish .gifts, .radish .radish__logo {
+  .forside__body .body__image__gift, .forside__body .body__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .tree {
+  .body__image__tree {
     display: none;
   }
-  .groupster {
+  .buttons {
     height: 60vh;
     padding: 0 !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .gifts {
+  .body__image__gift {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -217,42 +218,42 @@
     z-index: -2;
     opacity: 80%;
   }
-  .radish__logo {
+  .body__logo {
     height: 23vh;
   }
-  .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+  .forside__body .buttons .buttons__opret, .forside__body .buttons .buttons__seKatalog, .forside__body .buttons .buttons__seSeddel {
     font-size: 2.5em;
     height: 10vh;
     width: 60%;
     border-radius: 25px;
   }
-  .radish nav a {
+  .forside__body nav a {
     font-size: 1.4em;
   }
 }
 
 @media (min-width: 1281px) {
-  .radish {
+  .forside__body {
     -ms-grid-rows: 50% 30% 20%;
         grid-template-rows: 50% 30% 20%;
   }
-  .radish .radish__logo {
+  .forside__body .body__logo {
     height: 100%;
     padding-top: 10vh;
   }
-  .radish nav {
+  .forside__body nav {
     display: none;
   }
-  .radish .gifts {
+  .forside__body .body__image__gift {
     display: none;
   }
-  .radish .groupster {
+  .forside__body .buttons {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
-  .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+  .forside__body .buttons .buttons__opret, .forside__body .buttons .buttons__seKatalog, .forside__body .buttons .buttons__seSeddel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -264,7 +265,7 @@
             justify-content: center;
     justify-self: center;
   }
-  .radish .radish__bar .bar__left {
+  .forside__body .body__bar .bar__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -282,7 +283,7 @@
     padding-right: 1vw;
     font-size: 2em;
   }
-  .radish .radish__bar {
+  .forside__body .body__bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -299,7 +300,7 @@
             justify-content: space-between;
     background: white;
   }
-  .radish .radish__bar h3 {
+  .forside__body .body__bar h3 {
     font-size: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,7 +310,7 @@
             align-items: center;
     padding-left: 1vw;
   }
-  .radish .radish__bar img {
+  .forside__body .body__bar img {
     height: 10vh;
   }
   /* Media Queries Iphone 6/7/8 - None*/

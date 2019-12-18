@@ -1,15 +1,15 @@
-document.getElementById('john__open').addEventListener("click",
+document.getElementById('mineoensker__add').addEventListener("click",
 function() {
-    document.getElementById('modal').style.display = "flex";
+    document.getElementById('body__modal').style.display = "flex";
 });
 
 
 document.getElementById('modal__content__close').addEventListener("click", 
 function() {
-	document.getElementById('modal').style.display = "none";
+	document.getElementById('body__modal').style.display = "none";
 });
 
-document.getElementById('button').addEventListener("click", 
+document.getElementById('content__button').addEventListener("click", 
 function() {
-	document.getElementById('modal').style.display = "none";
+	document.getElementById('body__modal').style.display = "none";
 });

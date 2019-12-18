@@ -1,17 +1,17 @@
 /* basic color scheme*/
 /* class til body element*/
-.frank {
+.seddel__body {
   background-color: #f3f3f3;
   height: 100vh;
   width: 100vw;
   margin: 0;
 }
 
-.frank .frank__bar {
+.seddel__body .body__bar {
   display: none;
 }
 
-.frank nav {
+.seddel__body nav {
   border: solid 1px;
   position: fixed;
   bottom: 0;
@@ -26,12 +26,12 @@
       justify-content: space-around;
 }
 
-.frank nav a {
+.seddel__body nav a {
   color: #f3f3f3;
   font-size: 0.9em;
 }
 
-.frank h2 {
+.seddel__body h2 {
   font-size: 2em;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.frank .john {
+.seddel__body .body__mineoensker {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 4fr 1fr;
@@ -51,11 +51,11 @@
   font-size: 1.2em;
 }
 
-.frank .john p {
+.seddel__body .body__mineoensker p {
   margin: 0;
 }
 
-.frank .john a {
+.seddel__body .body__mineoensker a {
   -ms-grid-column: 1;
   grid-column: 1;
   display: -webkit-box;
@@ -68,7 +68,7 @@
   color: black;
 }
 
-.frank .john #john__open {
+.seddel__body .body__mineoensker #mineoensker__add {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-flex-item-align: center;
@@ -79,7 +79,7 @@
   cursor: pointer;
 }
 
-.frank .frank__hr {
+.seddel__body .body__hr {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -87,13 +87,13 @@
   width: 100%;
 }
 
-.frank .frank__hr img {
+.seddel__body .body__hr img {
   width: 70%;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-.frank .frank__hr hr {
+.seddel__body .body__hr hr {
   border: none;
   background-color: black;
   height: 1px;
@@ -103,7 +103,7 @@
       align-self: center;
 }
 
-.frank .ashlog {
+.seddel__body .body__delt {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -116,7 +116,7 @@
   margin-bottom: 7vh;
 }
 
-.frank .ashlog section {
+.seddel__body .body__delt section {
   border-radius: 50%;
   background-color: #f3f3f3;
   display: -webkit-box;
@@ -139,7 +139,7 @@
   max-height: 60px;
 }
 
-.frank #modal {
+.seddel__body #body__modal {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -157,7 +157,7 @@
   display: none;
 }
 
-.frank .modal__content {
+.seddel__body .modal__content {
   width: 300px;
   height: 480px;
   background-color: white;
@@ -166,13 +166,13 @@
   position: relative;
 }
 
-.frank .modal__content h3 {
+.seddel__body .modal__content h3 {
   padding-bottom: 5%;
   padding-top: 10%;
   font-size: 1.5em;
 }
 
-.frank .modal__content .modal__content__img {
+.seddel__body .modal__content .modal__content__img {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -182,7 +182,7 @@
   grid-gap: 3vh;
 }
 
-.frank .modal__content button {
+.seddel__body .modal__content button {
   width: 70%;
   height: 11%;
   background-color: #F42929;
@@ -193,7 +193,7 @@
   margin-top: 10%;
 }
 
-.frank #modal__content__close {
+.seddel__body #modal__content__close {
   position: absolute;
   top: 0;
   right: 14px;
@@ -204,22 +204,22 @@
 
 /* Media Queries Tablet */
 @media (min-width: 600px) {
-  .frank nav a {
+  .seddel__body nav a {
     padding-top: 1.5%;
   }
-  .frank h2 {
+  .seddel__body h2 {
     font-size: 2.5em;
   }
-  .frank .john {
+  .seddel__body .body__mineoensker {
     padding-top: 3vh;
     padding-bottom: 3vh;
     grid-gap: 4vh;
     font-size: 2.2em;
   }
-  .frank .john #john__open {
+  .seddel__body .body__mineoensker #mineoensker__add {
     font-size: 75px;
   }
-  .frank .ashlog {
+  .seddel__body .body__delt {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
@@ -232,12 +232,12 @@
     margin-bottom: 7vh;
     margin-left: 7vh;
   }
-  .frank #modal {
+  .seddel__body #body__modal {
     position: absolute;
     width: 100vw;
     height: 100vh;
   }
-  .frank .modal__content {
+  .seddel__body .modal__content {
     width: 500px;
     height: 700px;
     background-color: white;
@@ -245,7 +245,7 @@
     text-align: center;
     position: relative;
   }
-  .frank .modal__content h3 {
+  .seddel__body .modal__content h3 {
     padding-bottom: 5%;
     padding-top: 10%;
     font-size: 2.5em;
@@ -259,40 +259,39 @@
   .img__sms {
     width: 140%;
   }
-  .frank .modal__content button {
+  .seddel__body .modal__content .content__button {
     font-size: 2em;
   }
-  .frank #modal__content__close {
+  .seddel__body #modal__content__close {
     font-size: 75px;
   }
 }
 
 /* Media Queries Iphone 6/7/8 */
 @media (max-height: 700px) {
-  .frank h2 {
+  .seddel__body h2 {
     font-size: 1.8em;
   }
 }
 
-/* Media Queries Iphone 6/7/8 Plus - None*/
 /* Media Queries Desktop */
 @media (min-width: 1281px) {
-  .frank .frank__bar {
+  .seddel__body .body__bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .frank nav {
+  .seddel__body nav {
     display: none;
   }
-  .frank {
+  .seddel__body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 10% 1fr;
         grid-template-columns: 1fr 10% 1fr;
     overflow: hidden;
   }
-  .frank__bar {
+  .body__bar {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
@@ -309,7 +308,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .frank .frank__bar .bar__left {
+  .seddel__body .body__bar .bar__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -318,10 +317,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .frank .frank__bar img {
+  .seddel__body .body__bar img {
     height: 10vh;
   }
-  .frank .frank__bar .logud {
+  .seddel__body .body__bar .bar__logud {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -331,7 +330,7 @@
             align-items: center;
     padding-right: 1vw;
   }
-  .frank .frank__bar .bar__center {
+  .seddel__body .body__bar .bar__center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -343,7 +342,7 @@
             justify-content: space-between;
     width: 50%;
   }
-  .frank .frank__bar .bar__center a {
+  .seddel__body .body__bar .bar__center a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -360,20 +359,20 @@
     color: white;
     text-decoration: none;
   }
-  .frank .frank__bar .bar__center .sell {
+  .seddel__body .body__bar .bar__center .center__seSeddel {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     opacity: .8;
     border: solid 2px black;
   }
-  .frank .frank__bar .bar__center .make,
-  .frank .frank__bar .bar__center .sell {
+  .seddel__body .body__bar .bar__center .center__opret,
+  .seddel__body .body__bar .bar__center .center__seSeddel {
     background: #3C4BFF;
   }
-  .frank .frank__bar .bar__center .se {
+  .seddel__body .body__bar .bar__center .center__seKatalog {
     background: #F42929;
   }
-  .frank .frank__hr {
+  .seddel__body .body__hr {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -394,21 +393,21 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .frank .frank__hr hr {
+  .seddel__body .body__hr hr {
     width: 1.11111111px;
     height: 100%;
   }
-  .frank .john, .frank {
+  .seddel__body .body__mineoensker, .seddel__body {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  .frank .ashlog {
+  .seddel__body .body__delt {
     -ms-grid-column: 3;
     grid-column: 3;
   }
-  .frank .modal__content {
+  .seddel__body .modal__content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -416,4 +415,6 @@
         align-content: center;
   }
 }
+
+/* Media Queries Iphone 6/7/8 Plus - None*/
 /*# sourceMappingURL=seddel.css.map */

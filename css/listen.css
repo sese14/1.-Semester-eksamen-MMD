@@ -1,19 +1,19 @@
-.pineapple {
+.listen__body {
   background-color: #f3f3f3;
   margin: 0;
   width: 100vw;
   text-align: center;
 }
 
-.pineapple .pineapple__bar {
+.listen__body .body__bar {
   display: none;
 }
 
-.pineapple h2 {
+.listen__body h2 {
   font-size: 2em;
 }
 
-.pineapple .thatslife {
+.listen__body .body__items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 80%;
@@ -21,21 +21,21 @@
   padding-bottom: 5vh;
 }
 
-.pineapple .thatslife img {
+.listen__body .body__items img {
   width: 100%;
   -ms-grid-column: 1;
   grid-column: 1;
   margin: 2vw;
 }
 
-.pineapple .thatslife h2 {
+.listen__body .body__items h2 {
   margin: 0;
   padding: 3vh;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-.pineapple .heart {
+.listen__body .heart {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 60% 20%;
@@ -51,7 +51,7 @@
   padding-bottom: 5vh;
 }
 
-.pineapple .heart .fa-heart {
+.listen__body .heart .fa-heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@
   font-size: 1.5em;
 }
 
-.pineapple p {
+.listen__body p {
   -ms-grid-column: 2;
   grid-column: 2;
   display: -webkit-box;
@@ -76,7 +76,7 @@
   justify-self: center;
 }
 
-.pineapple nav {
+.listen__body nav {
   border: solid 1px;
   position: fixed;
   bottom: 0;
@@ -91,12 +91,12 @@
       justify-content: space-around;
 }
 
-.pineapple nav a {
+.listen__body nav a {
   color: #f3f3f3;
   font-size: 0.9em;
 }
 
-.pineapple button {
+.listen__body button {
   height: 70px;
   width: 50%;
   -ms-grid-column-align: center;
@@ -107,7 +107,7 @@
   border-radius: 10px;
 }
 
-.pineapple .pineapple__hr {
+.listen__body .body__hr {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -115,7 +115,7 @@
   width: 100%;
 }
 
-.pineapple .pineapple__hr hr {
+.listen__body .body__hr hr {
   border: none;
   width: 100%;
   -ms-flex-item-align: center;
@@ -129,13 +129,13 @@
 
 /* Media Queries Iphone 6/7/8 */
 @media (max-height: 700px) {
-  .pineapple h2 {
+  .listen__body h2 {
     font-size: 1.8em;
   }
-  .pineapple h3 {
+  .listen__body h3 {
     font-size: 1em;
   }
-  .pineapple p {
+  .listen__body p {
     font-size: 1.2em;
   }
 }
@@ -143,13 +143,13 @@
 /* Media Queries Iphone 6/7/8 Plus - None */
 /* Media Queries Tablet */
 @media (min-width: 600px) {
-  .pineapple h2 {
+  .listen__body h2 {
     font-size: 2.5em;
   }
-  .pineapple h3 {
+  .listen__body h3 {
     font-size: 2em;
   }
-  .pineapple p {
+  .listen__body p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,77 +159,77 @@
             align-items: center;
     font-size: 1.8em;
   }
-  .pineapple nav a {
+  .listen__body nav a {
     padding-top: 1vh;
   }
-  .pineapple .heart .fa-heart {
+  .listen__body .heart .fa-heart {
     font-size: 2em;
   }
 }
 
 /* Media Queries Desktop */
 @media (min-width: 1281px) {
-  .pineapple .pineapple__bar {
+  .listen__body .body__bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .pineapple nav {
+  .listen__body nav {
     display: none;
   }
-  .pineapple {
+  .listen__body {
     overflow: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .pineapple .a, .pineapple .c {
+  .listen__body .a, .listen__body .c {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .pineapple .b, .pineapple .d {
+  .listen__body .b, .listen__body .d {
     -ms-grid-column: 2;
     grid-column: 2;
   }
-  .pineapple .nin, .pineapple .tru {
+  .listen__body .nin, .listen__body .tru {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .pineapple .jam, .pineapple .hum {
+  .listen__body .jam, .listen__body .hum {
     -ms-grid-column: 2;
     grid-column: 2;
   }
-  .pineapple .a {
+  .listen__body .a {
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  .pineapple .b {
+  .listen__body .b {
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  .pineapple .c {
+  .listen__body .c {
     -ms-grid-row: 5;
     grid-row: 5;
   }
-  .pineapple .d {
+  .listen__body .d {
     -ms-grid-row: 5;
     grid-row: 5;
   }
-  .pineapple .pineapple__hr h3 {
+  .listen__body .body__hr h3 {
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .pineapple h2 {
+  .listen__body h2 {
     padding-top: 7vh;
     padding-bottom: 2vh;
     text-decoration: underline;
     font-size: 2.6em;
   }
-  .pineapple .thatslife p {
+  .listen__body .body__items p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -237,12 +237,12 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .pineapple .thatslife img {
+  .listen__body .body__items img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .pineapple__bar {
+  .body__bar {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
@@ -259,7 +259,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .pineapple .pineapple__bar .bar__left {
+  .listen__body .body__bar .bar__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -268,10 +268,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .pineapple .pineapple__bar img {
+  .listen__body .body__bar img {
     height: 10vh;
   }
-  .pineapple .pineapple__bar .logud {
+  .listen__body .body__bar .bar__logud {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -281,7 +281,7 @@
             align-items: center;
     padding-right: 1vw;
   }
-  .pineapple .pineapple__bar .bar__center {
+  .listen__body .body__bar .bar__center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -293,7 +293,7 @@
             justify-content: space-between;
     width: 50%;
   }
-  .pineapple .pineapple__bar .bar__center a {
+  .listen__body .body__bar .bar__center a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -309,22 +309,22 @@
     color: white;
     text-decoration: none;
   }
-  .pineapple .pineapple__bar .bar__center .make,
-  .pineapple .pineapple__bar .bar__center .sell {
+  .listen__body .body__bar .bar__center .center__opret,
+  .listen__body .body__bar .bar__center .center__seSeddel {
     background: #3C4BFF;
   }
-  .pineapple .pineapple__bar .bar__center .se {
+  .listen__body .body__bar .bar__center .center__seKatalog {
     background: #F42929;
   }
-  .pineapple h2 {
+  .listen__body h2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
   }
-  .pineapple .thatlife p, .pineapple .pineapple__hr {
-    font-size: 1.6em;
+  .listen__body .body__items p, .listen__body .body__hr {
+    font-size: 1.2em;
   }
-  .pineapple .thatslife p {
+  .listen__body .body__items p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -336,15 +336,15 @@
             justify-content: center;
     padding-left: 1vw;
   }
-  .pineapple h2 {
+  .listen__body h2 {
     font-size: 4em;
   }
-  .pineapple .thatslife {
+  .listen__body .body__items {
     -ms-grid-columns: 20% 50%;
         grid-template-columns: 20% 50%;
     font-size: 1.6em;
   }
-  .pineapple .heart {
+  .listen__body .heart {
     -ms-grid-columns: 20% 50% 20%;
         grid-template-columns: 20% 50% 20%;
   }

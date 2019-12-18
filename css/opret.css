@@ -1,4 +1,4 @@
-.frid {
+.opret__body {
   background-color: #f3f3f3;
   display: -ms-grid;
   display: grid;
@@ -11,24 +11,24 @@
   justify-items: center;
 }
 
-.frid .gaver3 {
+.opret__body .body__image__gift__2 {
   display: none;
 }
 
-.frid .frid__bar {
+.opret__body .body__bar {
   display: none;
 }
 
-.frid .julbr {
+.opret__body .body__image__brman {
   display: none;
 }
 
-.frid h2 {
+.opret__body h2 {
   padding-top: 7vh;
   margin: 0;
 }
 
-.frid .frid__input {
+.opret__body .body__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,7 @@
           justify-content: space-between;
 }
 
-.frid .frid__input input {
+.opret__body .body__input input {
   width: 80%;
   height: 20%;
   -ms-flex-item-align: center;
@@ -55,12 +55,12 @@
   font-size: 0.9em;
 }
 
-.frid p {
+.opret__body p {
   font-size: 0.8em;
   text-align: center;
 }
 
-.frid .frid__a {
+.opret__body .body__a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,14 +81,13 @@
   text-decoration: none;
 }
 
-.frid .gift {
+.opret__body .body__image__gift {
   z-index: -2;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-/* Media Queries Iphone 6/7/8 Plus - NONE*/
 /* Media Queries Iphone 6/7/8 */
 @media (max-height: 700px) {
   ::-webkit-input-placeholder {
@@ -103,12 +102,12 @@
   ::placeholder {
     font-size: 1.1em;
   }
-  .frid a {
+  .opret__body a {
     font-size: 2em;
     height: 50px;
     width: 80%;
   }
-  .frid img {
+  .opret__body img {
     z-index: -2;
     position: absolute;
     bottom: 0;
@@ -118,7 +117,7 @@
 
 /* Media Queries Tablet */
 @media (min-width: 600px) {
-  .frid p {
+  .opret__body p {
     font-size: 1em;
     padding-top: 2%;
   }
@@ -134,10 +133,10 @@
   ::placeholder {
     font-size: 2em;
   }
-  .frid a {
+  .opret__body a {
     font-size: 2em;
   }
-  .frid .gift {
+  .opret__body .body__image__gift {
     z-index: -2;
     position: absolute;
     bottom: 0;
@@ -147,7 +146,7 @@
 
 /* Media Queries Desktop */
 @media (min-width: 1281px) {
-  .frid {
+  .opret__body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -155,21 +154,21 @@
     -ms-grid-rows: 20% 35% 10% 35%;
         grid-template-rows: 20% 35% 10% 35%;
   }
-  .frid h2 {
+  .opret__body h2 {
     padding-top: 15vh;
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .frid .frid__input input, .frid .frid__a {
+  .opret__body .body__input input, .opret__body .body__a {
     width: 50%;
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .frid .frid__input, .frid p {
+  .opret__body .body__input, .opret__body p {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .frid .frid__bar {
+  .opret__body .body__bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -186,12 +185,12 @@
             justify-content: space-between;
     background: white;
   }
-  .frid .frid__bar .bar__left {
+  .opret__body .body__bar .bar__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .frid .frid__bar h3 {
+  .opret__body .body__bar h3 {
     font-size: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -201,10 +200,10 @@
             align-items: center;
     padding-left: 1vw;
   }
-  .frid .frid__bar img {
+  .opret__body .body__bar img {
     height: 10vh;
   }
-  .frid .bar__a {
+  .opret__body .body__bar .bar__a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -216,7 +215,7 @@
             justify-content: end;
     padding-right: 1vw;
   }
-  .frid .gaver3 {
+  .opret__body .body__image__gift__2 {
     max-height: 760px;
     max-width: 1200px;
     left: 45%;
@@ -225,17 +224,19 @@
     bottom: 0;
     width: 80%;
   }
-  .frid .julbr {
+  .opret__body .body__image__brman {
     display: block;
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  .frid .gift {
+  .opret__body .body__image__gift {
     display: none;
   }
-  .frid .gaver3 {
+  .opret__body .body__image__gift__2 {
     display: block;
   }
 }
+
+/* Media Queries Iphone 6/7/8 Plus - NONE*/
 /*# sourceMappingURL=opret.css.map */

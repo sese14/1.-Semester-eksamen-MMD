@@ -1,11 +1,12 @@
+//color palet for all pages
 $colors: (
     primary: #F42929,
     secondary: #3C4BFF,
     neutral: #f3f3f3,
     tezt:rgb(255, 255, 255),
 );
-
-.radish{
+//mobile first development
+.forside__body{
 background-color: map-get($colors, neutral);
 height: 100vh;
 width: 100vw;
@@ -15,7 +16,7 @@ grid-template-columns: 1fr;
 overflow: hidden;
 position: fixed;
 margin: 0;
-.radish__bar{
+.body__bar{
     display: none;
 }
 nav{
@@ -35,14 +36,14 @@ nav{
 
 }
 
-.tree{
+.body__image__tree{
     position: absolute;
     bottom: -2%;
     right: -30%;
     z-index: -2;
     height: 70vh;
 }
-.groupster{
+.buttons{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -52,7 +53,7 @@ nav{
     color: map-get($map:$colors, $key: tezt);
     
 
-.make, .se, .sell{
+.buttons__opret, .buttons__seKatalog, .buttons__seSeddel{
     width: 80%;
     height: 10vh;
     font-size: 1.6em;
@@ -67,34 +68,34 @@ nav{
     opacity: 0;
 }
 
-.make, .sell{
+.buttons__opret, .buttons__seSeddel{
     background-color: map-get($map: $colors, $key:secondary );}
     
-.se{
+.buttons__seKatalog{
     background-color: map-get($map: $colors, $key: primary );
     
 }
 
-    .make{
+    .buttons__opret{
             animation: yourAnimationblue .8s forwards 1.4s ease-out;
         }
-        .se{
+        .buttons__seKatalog{
             animation: yourAnimationred .8s forwards 1s ease-out;
         }
-        .sell{
+        .buttons__seSeddel{
             animation: yourAnimationblue 1s forwards 0s ease-out;
         }
     
     }
 
-.gifts, .radish__logo{
+.body__image__gift, .body__logo{
     display:none;
     justify-self: center;
 
 }}
 
-/* Media Queries Tablet */
 
+//animation for "buttons" activates on reload 
 @keyframes yourAnimationblue{
     0%{
         transform: translateY(-800%);
@@ -127,27 +128,27 @@ nav{
         transform: rotate(5deg);
         }
 }
-
+/* Media Queries Tablet */
 @media (min-width: 600px){ 
 
-    .radish{
+    .forside__body{
         grid-template-rows: 20% 60% 20%;
     }
   
-    .radish .gifts, .radish .radish__logo{
+    .forside__body .body__image__gift, .forside__body .body__logo{
         display: flex ;}
 
-    .tree{
+    .body__image__tree{
         display: none;
     }
 
-    .groupster{
+    .buttons{
         height:60vh;
         padding: 0 !important;
         justify-content: space-between;
        
     }
-    .gifts{
+    .body__image__gift{
         width: 100%;
        position: absolute;
        bottom: 0;
@@ -155,11 +156,11 @@ nav{
        z-index: -2;
        opacity: 80%;
     }
-    .radish__logo{
+    .body__logo{
         height: 23vh;
     }
 
-    .radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+    .forside__body .buttons .buttons__opret, .forside__body .buttons .buttons__seKatalog, .forside__body .buttons .buttons__seSeddel {
       font-size: 2.5em;
       height: 10vh;
       width: 60%;
@@ -167,38 +168,38 @@ nav{
 
     }
    
-    .radish nav a{
+    .forside__body nav a{
             font-size: 1.4em;
     }
 }
 @media (min-width: 1281px){
-.radish{
+.forside__body{
     grid-template-rows: 50% 30% 20%;
 }
-.radish .radish__logo{
+.forside__body .body__logo{
     height: 100%;
     padding-top: 10vh;
 }
 
-    .radish nav{
+    .forside__body nav{
         display: none;
     }
-    .radish .gifts{
+    .forside__body .body__image__gift{
         display: none;
     }
-.radish .groupster{
+.forside__body .buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.radish .groupster .make, .radish .groupster .se, .radish .groupster .sell {
+.forside__body .buttons .buttons__opret, .forside__body .buttons .buttons__seKatalog, .forside__body .buttons .buttons__seSeddel {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: center;
 }
 
-.radish .radish__bar .bar__left{
+.forside__body .body__bar .bar__left{
     display: flex;
 }
 .bar__a{  
@@ -208,7 +209,7 @@ nav{
     padding-right:1vw ;
     font-size: 2em;
 }
-    .radish .radish__bar{   
+    .forside__body .body__bar{   
         display: flex;
         position: absolute;
         width: 100%;
@@ -219,17 +220,19 @@ nav{
         background: map-get($map: $colors, $key: tezt);
      
     }
-    .radish .radish__bar h3{
+    .forside__body .body__bar h3{
       font-size: 3em;
       display: flex;
       align-items: center;
       padding-left: 1vw;;
     }
     
-    .radish .radish__bar img{
+    .forside__body .body__bar img{
       height: 10vh;
     }
 
+
+//there were no need to justify anything on the following devices
 
 /* Media Queries Iphone 6/7/8 - None*/
 
