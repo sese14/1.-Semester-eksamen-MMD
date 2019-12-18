@@ -14,7 +14,11 @@ $colors: (
   display: grid;
   grid-template-columns: .5fr 1fr;
   overflow: hidden;
-  .gaver{
+ 
+  .sanbr{
+    display: none;
+  }
+    .gaver{
     display: none;
   }
   .red__bar{
@@ -41,6 +45,10 @@ $colors: (
           grid-column: 1/3;
           grid-row: 1;
           justify-self: end;
+          right: 0;
+          position: absolute;
+          max-width: 425px;
+          max-height: 820px;
   }
   .redhotchili__a{
       grid-column: 1/2;
@@ -62,7 +70,12 @@ $colors: (
 }
 
 /* Media Queries Iphone 6/7/8 */
-
+@media (max-height: 700px){
+.redhotchilipeppers{
+  max-width: 550px;
+}
+  
+}
 
 /* MANGLER FIXED BOKS (a) */
 
@@ -146,13 +159,22 @@ $colors: (
   .redhotchilipeppers .red__bar .bar__center .se{
     background: map-get($map: $colors, $key: primary);
   }
+.redhotchilipeppers .hris{
+  display: none;
+}
 
-    .redhotchilipeppers .hris{
-      width: 50vh;
+    .redhotchilipeppers .sanbr{
+      display: block;
+      width: 35%;
       grid-column: 2;
+      grid-row: 1;
       justify-self: start;
       bottom: -15vh;
-      position: relative;
+      position: fixed;
+      bottom: -5%;
+      right: 10%;
+      max-height: 760px;
+      max-width: 467px;
     }
     .redhotchilipeppers .gaver{
       position: absolute;

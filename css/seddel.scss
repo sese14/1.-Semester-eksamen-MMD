@@ -44,7 +44,7 @@ h2{
         justify-self: start;
         text-align: start;
         padding-left: 10vw;
-        font-size: 1.6em;
+        font-size: 1.2em;
 p{
     margin: 0;
 }
@@ -87,10 +87,10 @@ p{
     
     .ashlog{
         grid-column: 1/4; 
-        font-size: 1.6em;
+        font-size: 1.2em;
         display: grid;
         grid-template-columns: 25% 75%;
-        width: 100%;
+        width: 90%;
         margin-bottom: 7vh;
    
         section{
@@ -304,13 +304,20 @@ p{
 .frank .frank__bar .bar__center a{
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     height: 8vh; 
     width: 30%;
     font-size: 2em;
     color: map-get($map: $colors, $key: tezt);
-    text-decoration: none;
-  }
+    text-decoration: none;}
+  
+    .frank .frank__bar .bar__center .sell{
+      transform: scale(1.1);
+      opacity: .8;
+      border: solid 2px black;
+    }
+
   .frank .frank__bar .bar__center .make,
   .frank .frank__bar .bar__center .sell {
     background: map-get($map: $colors, $key: secondary);

@@ -10,6 +10,10 @@
   overflow: hidden;
 }
 
+.redhotchilipeppers .sanbr {
+  display: none;
+}
+
 .redhotchilipeppers .gaver {
   display: none;
 }
@@ -47,6 +51,10 @@
   grid-row: 1;
   -ms-grid-column-align: end;
       justify-self: end;
+  right: 0;
+  position: absolute;
+  max-width: 425px;
+  max-height: 820px;
 }
 
 .redhotchilipeppers .redhotchili__a {
@@ -78,6 +86,12 @@
 }
 
 /* Media Queries Iphone 6/7/8 */
+@media (max-height: 700px) {
+  .redhotchilipeppers {
+    max-width: 550px;
+  }
+}
+
 /* MANGLER FIXED BOKS (a) */
 /* Media Queries Iphone 6/7/8 Plus - None */
 /* Media Queries Tablet */
@@ -184,13 +198,23 @@
     background: #F42929;
   }
   .redhotchilipeppers .hris {
-    width: 50vh;
+    display: none;
+  }
+  .redhotchilipeppers .sanbr {
+    display: block;
+    width: 35%;
     -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column-align: start;
         justify-self: start;
     bottom: -15vh;
-    position: relative;
+    position: fixed;
+    bottom: -5%;
+    right: 10%;
+    max-height: 760px;
+    max-width: 467px;
   }
   .redhotchilipeppers .gaver {
     position: absolute;

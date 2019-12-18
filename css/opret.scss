@@ -16,6 +16,9 @@ $colors: (
     width: 100vw;
     overflow: hidden;
     justify-items: center;
+    .gaver3{
+      display: none;
+    }
 
     .frid__bar{
       display: none;
@@ -41,6 +44,7 @@ $colors: (
             border-radius: 10px;
             border: 1px solid black;
             padding-left: 10px;
+            font-size: 0.9em;
         }
     }
     p{
@@ -76,9 +80,8 @@ $colors: (
  /* Media Queries Iphone 6/7/8 */
 
  @media (max-height: 700px){  
-  
   ::placeholder {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   
   .frid a {
@@ -176,16 +179,26 @@ $colors: (
   justify-content: end;
   padding-right:1vw ;
 }
-.frid .gift{
+.frid .gaver3{
 max-height: 760px;
 max-width: 1200px;
 left: 45%;
+z-index: -2;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
 }
 .frid .julbr{
   display: block;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.frid .gift{
+  display: none;
+}
+.frid .gaver3{
+  display: block;
 }
 
 }

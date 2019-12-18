@@ -139,9 +139,11 @@
     display: -ms-flexbox;
     display: flex;
     padding-left: 1vw;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .body .body__bar .bar__left h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .body .body__bar img {
     height: 10vh;
@@ -186,6 +188,7 @@
   .body .body__bar .bar__center .make,
   .body .body__bar .bar__center .sell {
     background: #3C4BFF;
+    text-align: center;
   }
   .body .body__bar .bar__center .se {
     background: #F42929;

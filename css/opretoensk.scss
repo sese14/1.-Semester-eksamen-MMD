@@ -130,7 +130,9 @@ $colors: (
  .body .body__bar .bar__left{
    display: flex;
    padding-left: 1vw;
-   align-items: center;
+ }
+ .body .body__bar .bar__left h1{
+   align-self: center;
  }
  .body .body__bar img{
    height: 10vh;
@@ -160,6 +162,7 @@ $colors: (
  .body .body__bar .bar__center .make,
  .body .body__bar .bar__center .sell {
    background: map-get($map: $colors, $key: secondary);
+   text-align: center;
  }
 
  .body .body__bar .bar__center .se{
@@ -170,6 +173,7 @@ $colors: (
    transform: scale(1.1);
    opacity: .8;
    border: solid 2px black;
+   
  }
  .body .tree{
    display: block;
