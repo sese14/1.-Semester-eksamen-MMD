@@ -1,13 +1,13 @@
+//basic color palet for all scss
 $colors: (
     primary: #F42929,
     secondary: #3C4BFF,
     neutral: #f3f3f3,
     tezt:rgb(255, 255, 255),
-)
-;
+);
 
-
-.uffa{
+//mobile first development
+.login__body{
 justify-items: center;
 background-color: map-get($colors, neutral);
 display: grid;
@@ -15,17 +15,17 @@ height: 100vh;
 width: 100vw;
 overflow: hidden;
 margin: 0;
-.uffa__images{
+.body__images{
   display: none;
 }
-.uffa__bar{
+.body__bar{
   display: none;
 }
-.logo{
+.body__logo{
     height: 30vh;
 }
 
-.the-one{
+.body__login{
     width: 225px;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@ img{
     height: 100px;
 }}
 
-.uffa__hr {
+.body__hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -62,6 +62,8 @@ p{
 }
 
 }
+
+//animation for "p" opret bruger
 @keyframes notice{
   0%{
       transform: rotate(0deg) scale(1);
@@ -80,16 +82,18 @@ p{
       }
 }
 
+
+//scaling til andre devices
 /* Media Queries Tablet */
 
 @media (min-width: 600px){ 
     h1 {
       font-size: 3em;
     }
-    .uffa{ 
+    .login__body{ 
       overflow: auto;
     }
-    .uffa .logo {
+    .login__body .body__logo {
       height: 40vh;
     }
   
@@ -97,71 +101,74 @@ p{
       font-size: 2em;
     }
     
-    .uffa .the-one {
+    .login__body .body__login {
       width: 65%;
     }
    
-    .uffa .uffa__hr hr {
+    .login__body .body__hr hr {
       height: 1px;
     }
     
-    .uffa p {
+    .login__body p {
       font-size: 35px;
     }
   }
 
+  /* Media Queries Desktop */
   @media (min-width: 1281px){
 
-    .uffa .uffa__bar{
+    .login__body .body__bar{
+      position: absolute;
       display: flex;
+      justify-content: start;
       width: 100%;
       border: solid 1px;
       height: 10vh;
       background: map-get($map: $colors, $key: tezt);
      
     }
-    .uffa .uffa__bar h3{
+    .login__body .body__bar h3{
       font-size: 3em;
       display: flex;
       align-items: center;
       padding-left: 1vw;;
     }
     
-    .uffa .uffa__bar img{
+    .login__body .body__bar img{
       height: 10vh;
     }
-   .uffa  .logo{
+   .login__body  .body__logo{
     display: none;
   }
 
-  .uffa h1{
+  .login__body h1{
     margin: 0;
     padding: 0;
     font-size: 5em;
   }
-  .uffa h2{
+  .login__body h2{
     margin: 0;
     padding: 0;}
 
-.uffa .the-one{
+.login__body .body__login{
   flex-wrap: wrap;
   width: 300px;
 }
-.uffa .the-one img{
+.login__body .body__login img{
   height: 150px;
 }
-.uffa .uffa__hr{
+.login__body .body__hr{
   width: 30%;
 }
-.uffa .uffa__images{
+.login__body .body__images{
   display: block;
 }
-.uffa__images__1{
+.images__1{
 position: absolute;
 bottom: 0;
 right: 0;
 }
-.uffa__images__2{
+.images__2{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -175,10 +182,10 @@ right: 0;
     h1 {
       font-size: 1.8em;
     }
-    .uffa{ 
+    .login__body{ 
       overflow: auto;
     }
-    .uffa .logo {
+    .login__body .body__logo {
       height: 25vh;
     }
   
@@ -186,15 +193,15 @@ right: 0;
       font-size: 1.5em;
     }
     
-    .uffa .the-one {
+    .login__body .body__login {
       width: 65%;
     }
    
-    .uffa .uffa__hr hr {
+    .login__body .body__hr hr {
       height: 1px;
     }
     
-    .uffa p {
+    .login__body p {
       font-size: 20px;
     }
   }
@@ -205,9 +212,9 @@ right: 0;
     h1 {
       font-size: 1.8em;
     }
-    .uffa{ 
+    .login__body{ 
       overflow: auto;
     }
   }
 
-  /* Media Queries Desktop */
+  
